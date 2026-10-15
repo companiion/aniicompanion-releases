@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" class="sem-download">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>AniiCompanion — live map for Egg Heist</title>
+  <meta name="description" content="Live map of the Egg Heist Lost Sanctum (Aniimo), on top of the game: where you are, nests, chests, route and wave alerts.">
+  <link rel="stylesheet" href="../style.css">
+  <!-- prévia do link e ícone -->
+  <link rel="icon" href="../img/icon.svg" type="image/svg+xml"><link rel="icon" href="../img/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"><meta name="theme-color" content="#0f1a2e">
+  <link rel="canonical" href="https://companiion.github.io/aniicompanion-releases/en/">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="AniiCompanion">
+  <meta property="og:title" content="AniiCompanion — live map for Egg Heist">
+  <meta property="og:description" content="Live map of the Egg Heist Lost Sanctum (Aniimo), on top of the game: where you are, nests, chests, route and wave alerts.">
+  <meta property="og:url" content="https://companiion.github.io/aniicompanion-releases/en/"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:image" content="https://companiion.github.io/aniicompanion-releases/img/preview-en.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AniiCompanion: live map for Operation: Egg Heist"><meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" hreflang="pt-BR" href="../index.html"><link rel="alternate" hreflang="en" href="index.html">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+<symbol id="voce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 19 20.3 12 16.6 5 20.3z"/></symbol>
+<symbol id="ninho" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8c2.3 0 3.8 2.9 3.8 5.2 0 1.9-1.5 3.2-3.8 3.2S8.2 9.9 8.2 8c0-2.3 1.5-5.2 3.8-5.2z"/><path d="M3.5 13.2c.9 4.4 4.3 7 8.5 7s7.6-2.6 8.5-7"/><path d="M6.2 16.2c3.4 1.5 8.2 1.5 11.6 0"/></symbol>
+<symbol id="ovo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8c3.3 0 5.6 4.6 5.6 8.6 0 3.4-2.5 6.1-5.6 6.1s-5.6-2.7-5.6-6.1c0-4 2.3-8.6 5.6-8.6z"/><path d="M9.3 11.8c.1 1.8 1 3.1 2.6 3.6"/><path d="M8 21.2h8"/></symbol>
+<symbol id="bau" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5c0-3.3 3.6-5.5 8.5-5.5s8.5 2.2 8.5 5.5z"/><path d="M4.5 10.5V19h15v-8.5"/><path d="M12 13v2.6"/></symbol>
+<symbol id="prismana" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 4h11l4 5.5L12 21 2.5 9.5z"/><path d="M2.5 9.5h19"/><path d="M9.2 4 7.5 9.5 12 21l4.5-11.5L14.8 4"/></symbol>
+<symbol id="relogio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.3 2"/></symbol>
+<symbol id="rota" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2.2"/><circle cx="18" cy="5" r="2.2"/><path d="M8.2 19h5.3a3.5 3.5 0 0 0 0-7h-3a3.5 3.5 0 0 1 0-7h5.3"/></symbol>
+<symbol id="escada" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5h5v-5h5v-5h5v-5h2.5"/><path d="M3.5 20.5h17"/></symbol>
+<symbol id="janela" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M3 9.2h18"/><path d="M6.6 6.9h.01M9.4 6.9h.01"/></symbol>
+<symbol id="equipe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.2 19.5c0-3.3 2.6-5.4 5.8-5.4s5.8 2.1 5.8 5.4"/><path d="M15.5 5.3a3 3 0 0 1 0 5.6"/><path d="M17.5 14.4c1.9.6 3.3 2.2 3.3 5.1"/></symbol>
+<symbol id="atualizacao" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.6-5.9M20 4v4.5h-4.5"/></symbol>
+<symbol id="escudo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+<symbol id="download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></symbol>
+<symbol id="alerta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 21.5 20h-19z"/><path d="M12 10v4.5"/><path d="M12 17.3h.01"/></symbol>
+<symbol id="pergunta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.4a2.6 2.6 0 1 1 3.7 2.3c-.8.4-1.2 1-1.2 1.9"/><path d="M12 17h.01"/></symbol>
+<symbol id="engrenagem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19.08 10.24 L21.47 10.42 L21.47 13.58 L19.08 13.76 L18.25 15.77 L19.81 17.58 L17.58 19.81 L15.77 18.25 L13.76 19.08 L13.58 21.47 L10.42 21.47 L10.24 19.08 L8.23 18.25 L6.42 19.81 L4.19 17.58 L5.75 15.77 L4.92 13.76 L2.53 13.58 L2.53 10.42 L4.92 10.24 L5.75 8.23 L4.19 6.42 L6.42 4.19 L8.23 5.75 L10.24 4.92 L10.42 2.53 L13.58 2.53 L13.76 4.92 L15.77 5.75 L17.58 4.19 L19.81 6.42 L18.25 8.23Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+</svg>
+  <a class="pular" href="#conteudo">Skip to content</a>
+  <header class="top" id="topo"><div class="wrap">
+    <a class="marca" href="index.html"><img class="logo" src="../img/icon.svg" alt="" width="28" height="28">AniiCompanion</a>
+    <nav class="menu-pc" aria-label="Main menu"><a href="index.html" aria-current="page">Home</a><a class="so-com-download" href="download.html">Download</a><a href="first-match.html">First match</a><a href="map.html">The map</a><a href="match-aids.html">Match aids</a><a href="team.html">Party</a><a href="customize.html">Customize</a><a href="troubleshooting.html">Troubleshooting</a><a href="privacy.html">Privacy</a></nav>
+    <div class="idioma" role="group" aria-label="Language"><a lang="pt-BR" hreflang="pt-BR" href="../index.html">PT</a><a lang="en" hreflang="en" href="index.html" aria-current="true">EN</a></div>
+    <details class="menu-cel"><summary><span class="hamb" aria-hidden="true"></span>Menu</summary>
+      <nav aria-label="Main menu"><a href="index.html" aria-current="page">Home</a><a class="so-com-download" href="download.html">Download</a><a href="first-match.html">First match</a><a href="map.html">The map</a><a href="match-aids.html">Match aids</a><a href="team.html">Party</a><a href="customize.html">Customize</a><a href="troubleshooting.html">Troubleshooting</a><a href="privacy.html">Privacy</a></nav></details>
+  </div></header>
+
+  <main class="wrap" id="conteudo">
+    <section class="hero">
+      <div>
+        <h1>See where you are in the Egg Heist <em>Lost Sanctum</em></h1>
+        <p class="lead">A map on top of the game shows you, the nests and your route.</p>
+        <ol class="legenda-n">
+          <li><b>You.</b> The yellow arrow follows your character.</li>
+          <li><b>Nest.</b> The gold ring shows the chance that a nest is there.</li>
+          <li><b>Route.</b> The blue line leads to the nests you have not checked yet.</li>
+        </ol>
+      </div>
+      <figure class="figura">
+        <div class="figura-img">
+          <img src="../img/mapa-principal-limpo.jpg" alt="The AniiCompanion map window showing the whole sanctum: nests with a gold ring, chests, the player’s yellow arrow and a blue route line." width="780" height="760">
+          <span class="marca-n m-45-34_5">1</span>
+          <span class="marca-n m-75-33">2</span>
+          <span class="marca-n m-61-33_5">3</span>
+        </div>
+      </figure>
+    </section>
+
+    <div class="faixa-seguranca"><svg class="ic" aria-hidden="true"><use href="#escudo"/></svg><p>The app only looks at the image of the game window, like a screenshot. It does not read memory, inject code or use mods. Aniimo has an anti-cheat and nobody can promise anything: using it is your decision. <a href="privacy.html">Learn more</a></p></div>
+
+    <section class="bloco so-com-download" id="download">
+      <div class="chamada">
+        <a class="botao grande" href="download.html"><svg class="ic" aria-hidden="true"><use href="#download"/></svg>Download for Windows</a>
+        <ul class="pontos linha"><li>Free</li><li>No account</li><li>Windows 11 (tested)</li><li>Updates with one click</li></ul>
+      </div>
+    </section>
+
+    <div class="nota so-sem-download"><p>Download coming soon. The new version is almost ready.</p></div>
+
+    <section class="bloco" id="features">
+      <p class="rotulo">What it shows</p>
+      <h2>What shows up on the map</h2>
+      <div class="funcao">
+        <div class="foto"><img src="../img/partida.jpg" alt="The game with its minimap in the top corner and, bottom left, the AniiCompanion window with the whole sanctum and the player position." width="774" height="720"></div>
+        <div>
+          <span class="icone"><svg class="ic" aria-hidden="true"><use href="#voce"/></svg></span>
+          <h3>You on the map, live</h3>
+          <p>The app finds you on the game minimap and draws the whole sanctum on top of your screen.</p>
+          <ul class="mini">
+            <li><span class="icone"><svg class="ic" aria-hidden="true"><use href="#janela"/></svg></span><span><b>Full screen or window</b><span>The window is small: you can move and resize it.</span></span></li>
+            <li><span class="icone"><svg class="ic" aria-hidden="true"><use href="#voce"/></svg></span><span><b>Turns with you or stays still</b><span>It turns with the camera, or stays north up.</span></span></li>
+            <li><span class="icone"><svg class="ic" aria-hidden="true"><use href="#check"/></svg></span><span><b>Hides and returns by itself</b><span>With the bag, a chest or a menu open, it hides.</span></span></li>
+          </ul>
+          <a class="ver" href="map.html">See the map <svg class="ic" aria-hidden="true"><use href="#seta"/></svg></a>
+        </div>
+      </div>
+      <div class="funcao inverso">
+        <div class="foto"><img src="../img/pp-tela-toda.jpg" alt="Map over the game: nests with a gold ring and the chance beside them (≈45%), a key-room nest at ≈25%, the “boss 40%” badge, a green ✓ and a friend." width="800" height="463" loading="lazy"></div>
+        <div>
+          <span class="icone"><svg class="ic" aria-hidden="true"><use href="#ninho"/></svg></span>
+          <h3>The chance of each nest</h3>
+          <p>Each spot shows the chance of a nest in this match.</p>
+          <ul class="mini">
+            <li><span class="icone"><svg class="ic" aria-hidden="true"><use href="#ninho"/></svg></span><span><b>Ring and number</b><span>Gold ring and ≈45% beside it: the chance of a nest being there.</span></span></li>
+            <li><span class="icone"><svg class="ic" aria-hidden="true"><use href="#check"/></svg></span><span><b>Green ✓</b><span>The nest was already searched, by you or by a friend.</span></span></li>
+            <li><span class="icone"><svg class="ic" aria-hidden="true"><use href="#alerta"/></svg></span><span><b>“boss 40%” badge</b><span>The chance of the boss being in that room.</span></span></li>
+          </ul>
+          <a class="ver" href="map.html#nests">See the nests <svg class="ic" aria-hidden="true"><use href="#seta"/></svg></a>
+        </div>
+      </div>
+      <div class="funcao">
+        <div class="foto"><img src="../img/ajudas-rota-limpo.jpg" alt="Map over the game with a blue line leaving the player and passing through the nests numbered 1 to 4." width="1200" height="607" loading="lazy"></div>
+        <div>
+          <span class="icone"><svg class="ic" aria-hidden="true"><use href="#relogio"/></svg></span>
+          <h3>Route through the nests</h3>
+          <p>A blue line leads to the nests still missing. Thirty seconds before each monster wave, a card at the top of the screen counts down.</p>
+          <div class="foto"><img src="../img/ajudas-reforco-corte.jpg" alt="Card at the top of the screen: Wave in 0:22, “2 of 3”." width="860" height="248" loading="lazy"></div>
+          <a class="ver" href="match-aids.html">See the match aids <svg class="ic" aria-hidden="true"><use href="#seta"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco" id="more">
+      <p class="rotulo">And more</p>
+      <h2>Other features</h2>
+      <ul class="linhas">
+        <li><a href="map.html#chests"><span class="icone"><svg class="ic" aria-hidden="true"><use href="#prismana"/></svg></span><span><b>Rare chests and Prismana</b><span>Which chests can still give the Prismana item.</span></span><svg class="ic seta" aria-hidden="true"><use href="#seta"/></svg></a></li>
+        <li><a href="map.html#upper-floor"><span class="icone"><svg class="ic" aria-hidden="true"><use href="#escada"/></svg></span><span><b>Upper floor</b><span>When you climb the stairs, the walkways show up on the map.</span></span><svg class="ic seta" aria-hidden="true"><use href="#seta"/></svg></a></li>
+        <li><a href="map.html#eggs"><span class="icone"><svg class="ic" aria-hidden="true"><use href="#ovo"/></svg></span><span><b>Egg on the floor</b><span>The app marks where an egg was left, yours or a friend’s.</span></span><svg class="ic seta" aria-hidden="true"><use href="#seta"/></svg></a></li>
+        <li><a href="team.html"><span class="icone"><svg class="ic" aria-hidden="true"><use href="#equipe"/></svg></span><span><b>Play in a party</b><span>See where your friends are. What they find shows up on your map.</span></span><svg class="ic seta" aria-hidden="true"><use href="#seta"/></svg></a></li>
+        <li><a href="customize.html"><span class="icone"><svg class="ic" aria-hidden="true"><use href="#engrenagem"/></svg></span><span><b>Your way</b><span>Full screen or window, opacity, icons and trail.</span></span><svg class="ic seta" aria-hidden="true"><use href="#seta"/></svg></a></li>
+        <li><a href="download.html#update"><span class="icone"><svg class="ic" aria-hidden="true"><use href="#atualizacao"/></svg></span><span><b>One-click update</b><span>The app tells you when a new version is out.</span></span><svg class="ic seta" aria-hidden="true"><use href="#seta"/></svg></a></li>
+      </ul>
+    </section>
+
+    <section class="bloco" id="start">
+      <p class="rotulo">First match</p>
+      <h2>Start in 3 steps</h2>
+      <ol class="passos linha">
+        <li><b>Download and install</b><span>One zip, one folder, a few minutes.</span></li>
+        <li><b>Open the game</b><span>In windowed or borderless fullscreen mode.</span></li>
+        <li><b>Enter Egg Heist</b><span>The map appears by itself inside the sanctum. <kbd>F1</kbd> shows or hides it.</span></li>
+      </ol>
+      <div class="acoes mt-3"><a class="botao leve" href="first-match.html">Full walkthrough</a><a class="botao leve" href="troubleshooting.html">Something went wrong?</a></div>
+    </section>
+
+    <section class="bloco" id="quick">
+      <p class="rotulo">Questions</p>
+      <h2>Quick questions</h2>
+      <details class="faq"><summary>Does it work on my PC?</summary><p>It was tested on 64-bit Windows 11. Windows 10 should work but has not been tested. The game must be windowed or borderless fullscreen. <a href="download.html#requirements">See what you need</a></p></details>
+      <details class="faq"><summary>Will I get banned?</summary><p>The app only looks at the image of the game window, like a screenshot. Aniimo has an anti-cheat and we do not speak for the developers. Nobody can promise that a tool will never be flagged. Using it is your choice and at your own risk. <a href="privacy.html">Details</a></p></details>
+      <details class="faq"><summary>Is it free?</summary><p>Yes. It is free, with no account and no data collection. It is a fan project, not affiliated with Pawprint Studio / FunPlus.</p></details>
+      <details class="faq"><summary>The map does not show up. Now what?</summary><p>Check that the game is windowed or borderless fullscreen and that you are already inside the sanctum. <a href="troubleshooting.html">See Troubleshooting</a></p></details>
+    </section>
+  </main>
+
+  <footer><div class="wrap">
+    <p>AniiCompanion · free fan project. Aniimo is a trademark of Pawprint Studio / FunPlus; not affiliated with them.</p>
+    <div class="rodape-links"><a class="so-com-download" href="download.html">Download</a><a href="privacy.html">Privacy and security</a><a class="so-com-download" href="https://github.com/companiion/aniicompanion-releases/releases">All versions (GitHub)</a></div>
+  </div></footer>
+</body>
+</html>

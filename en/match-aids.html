@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en" class="sem-download">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Match aids — AniiCompanion</title>
+  <meta name="description" content="Wave and horde alerts, route, time to head back, nest chance, rich rooms and Prismana in AniiCompanion, and how to turn each one on or off.">
+  <link rel="stylesheet" href="../style.css">
+  <!-- prévia do link e ícone -->
+  <link rel="icon" href="../img/icon.svg" type="image/svg+xml"><link rel="icon" href="../img/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"><meta name="theme-color" content="#0f1a2e">
+  <link rel="canonical" href="https://companiion.github.io/aniicompanion-releases/en/match-aids.html">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="AniiCompanion">
+  <meta property="og:title" content="Match aids — AniiCompanion">
+  <meta property="og:description" content="Wave and horde alerts, route, time to head back, nest chance, rich rooms and Prismana in AniiCompanion, and how to turn each one on or off.">
+  <meta property="og:url" content="https://companiion.github.io/aniicompanion-releases/en/match-aids.html"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:image" content="https://companiion.github.io/aniicompanion-releases/img/preview-en.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AniiCompanion: live map for Operation: Egg Heist"><meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" hreflang="pt-BR" href="../ajudas.html"><link rel="alternate" hreflang="en" href="match-aids.html">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+<symbol id="voce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 19 20.3 12 16.6 5 20.3z"/></symbol>
+<symbol id="ninho" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8c2.3 0 3.8 2.9 3.8 5.2 0 1.9-1.5 3.2-3.8 3.2S8.2 9.9 8.2 8c0-2.3 1.5-5.2 3.8-5.2z"/><path d="M3.5 13.2c.9 4.4 4.3 7 8.5 7s7.6-2.6 8.5-7"/><path d="M6.2 16.2c3.4 1.5 8.2 1.5 11.6 0"/></symbol>
+<symbol id="ovo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8c3.3 0 5.6 4.6 5.6 8.6 0 3.4-2.5 6.1-5.6 6.1s-5.6-2.7-5.6-6.1c0-4 2.3-8.6 5.6-8.6z"/><path d="M9.3 11.8c.1 1.8 1 3.1 2.6 3.6"/><path d="M8 21.2h8"/></symbol>
+<symbol id="bau" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5c0-3.3 3.6-5.5 8.5-5.5s8.5 2.2 8.5 5.5z"/><path d="M4.5 10.5V19h15v-8.5"/><path d="M12 13v2.6"/></symbol>
+<symbol id="prismana" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 4h11l4 5.5L12 21 2.5 9.5z"/><path d="M2.5 9.5h19"/><path d="M9.2 4 7.5 9.5 12 21l4.5-11.5L14.8 4"/></symbol>
+<symbol id="relogio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.3 2"/></symbol>
+<symbol id="rota" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2.2"/><circle cx="18" cy="5" r="2.2"/><path d="M8.2 19h5.3a3.5 3.5 0 0 0 0-7h-3a3.5 3.5 0 0 1 0-7h5.3"/></symbol>
+<symbol id="escada" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5h5v-5h5v-5h5v-5h2.5"/><path d="M3.5 20.5h17"/></symbol>
+<symbol id="janela" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M3 9.2h18"/><path d="M6.6 6.9h.01M9.4 6.9h.01"/></symbol>
+<symbol id="equipe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.2 19.5c0-3.3 2.6-5.4 5.8-5.4s5.8 2.1 5.8 5.4"/><path d="M15.5 5.3a3 3 0 0 1 0 5.6"/><path d="M17.5 14.4c1.9.6 3.3 2.2 3.3 5.1"/></symbol>
+<symbol id="atualizacao" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.6-5.9M20 4v4.5h-4.5"/></symbol>
+<symbol id="escudo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+<symbol id="download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></symbol>
+<symbol id="alerta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 21.5 20h-19z"/><path d="M12 10v4.5"/><path d="M12 17.3h.01"/></symbol>
+<symbol id="pergunta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.4a2.6 2.6 0 1 1 3.7 2.3c-.8.4-1.2 1-1.2 1.9"/><path d="M12 17h.01"/></symbol>
+<symbol id="engrenagem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19.08 10.24 L21.47 10.42 L21.47 13.58 L19.08 13.76 L18.25 15.77 L19.81 17.58 L17.58 19.81 L15.77 18.25 L13.76 19.08 L13.58 21.47 L10.42 21.47 L10.24 19.08 L8.23 18.25 L6.42 19.81 L4.19 17.58 L5.75 15.77 L4.92 13.76 L2.53 13.58 L2.53 10.42 L4.92 10.24 L5.75 8.23 L4.19 6.42 L6.42 4.19 L8.23 5.75 L10.24 4.92 L10.42 2.53 L13.58 2.53 L13.76 4.92 L15.77 5.75 L17.58 4.19 L19.81 6.42 L18.25 8.23Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+</svg>
+  <a class="pular" href="#conteudo">Skip to content</a>
+  <header class="top" id="topo"><div class="wrap">
+    <a class="marca" href="index.html"><img class="logo" src="../img/icon.svg" alt="" width="28" height="28">AniiCompanion</a>
+    <nav class="menu-pc" aria-label="Main menu"><a href="index.html">Home</a><a class="so-com-download" href="download.html">Download</a><a href="first-match.html">First match</a><a href="map.html">The map</a><a href="match-aids.html" aria-current="page">Match aids</a><a href="team.html">Party</a><a href="customize.html">Customize</a><a href="troubleshooting.html">Troubleshooting</a><a href="privacy.html">Privacy</a></nav>
+    <div class="idioma" role="group" aria-label="Language"><a lang="pt-BR" hreflang="pt-BR" href="../ajudas.html">PT</a><a lang="en" hreflang="en" href="match-aids.html" aria-current="true">EN</a></div>
+    <details class="menu-cel"><summary><span class="hamb" aria-hidden="true"></span>Menu</summary>
+      <nav aria-label="Main menu"><a href="index.html">Home</a><a class="so-com-download" href="download.html">Download</a><a href="first-match.html">First match</a><a href="map.html">The map</a><a href="match-aids.html" aria-current="page">Match aids</a><a href="team.html">Party</a><a href="customize.html">Customize</a><a href="troubleshooting.html">Troubleshooting</a><a href="privacy.html">Privacy</a></nav></details>
+  </div></header>
+
+  <main class="wrap" id="conteudo">
+
+    <section class="cab-pagina"><h1>Match aids</h1><p class="lead">Warnings and hints that show up over the map. Each one turns on and off on its own.</p></section>
+    <nav class="indice" aria-label="On this page"><b>On this page</b><ul><li><a href="#toggle">Turn on and off</a></li><li><a href="#reinforcements">Waves and horde</a></li><li><a href="#route">Route</a></li><li><a href="#leave-by">Time to head back</a></li><li><a href="#nest-chance">Nest chance</a></li><li><a href="#key-rooms">Key Rooms</a></li><li><a href="#rich-rooms">Rich rooms</a></li><li><a href="#chests">Chest types</a></li><li><a href="#prismana">Prismana</a></li></ul></nav>
+
+    <section class="bloco" id="toggle">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#engrenagem"/></svg> First things first</p>
+      <h2>How do I turn the aids on and off?</h2>
+      <p class="sub">They all come turned on. Turn off only the ones that get in your way.</p>
+      <div class="lado fixa">
+        <ol class="passos">
+          <li><b>Open the AniiCompanion window</b><span>It is the window with the tabs at the top. It stays open next to the game.</span></li>
+          <li><b>Go to the “Match aids” tab</b><span>Each aid has its own on/off switch.</span></li>
+          <li><b>Click the switch</b><span>Blue means on. The change is instant and only removes the aid from the screen. The rest of the map stays the same.</span></li>
+        </ol>
+        <div class="captura"><picture><source srcset="../img/ajudas-aba-claro.png" media="(prefers-color-scheme: light)"><img src="../img/ajudas-aba-escuro.png" alt="The “Match aids” tab of the app with five switches, all on: wave and horde alert, route through egg nests, “time to head back” alert, nest chance and rich rooms." width="380" height="515" loading="lazy"></picture>
+          <span class="marca-n m-5_5-38_8">1</span><span class="marca-n m-5_5-51">2</span><span class="marca-n m-5_5-61_7">3</span><span class="marca-n m-5_5-71_2">4</span><span class="marca-n m-5_5-81_8">5</span></div>
+        <h3 class="depois">The five aids on the tab</h3>
+        <ol class="legenda-n grande depois">
+          <li><a href="#reinforcements">Wave and horde alert</a>. Warns 30 s before each monster wave.</li>
+          <li><a href="#route">Route through egg nests</a>. Line to the egg nests still left to check.</li>
+          <li><a href="#leave-by">“Time to head back” alert</a>. When the time to reach the exit is running out.</li>
+          <li><a href="#nest-chance">Nest chance</a>. Ring and “≈45%” on each egg nest.</li>
+          <li><a href="#rich-rooms">Rich rooms</a>. Outline and counter for the rooms with the best prize.</li>
+        </ol>
+      </div>
+    </section>
+    <div class="anel" role="separator"></div>
+
+    <section class="bloco" id="reinforcements">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#alerta"/></svg> Timing</p>
+      <h2>Wave and horde alert</h2>
+      <p class="sub">A countdown at the top of the screen, 30 seconds before the game releases more monsters.</p>
+      <div class="funcao">
+        <div><div class="foto"><img src="../img/ajudas-reforco-corte.jpg" alt="Alert at the top of the screen: “Wave in 0:22”, “2 of 3”, over the map on top of the game." width="860" height="248" loading="lazy"></div><div class="foto"><img src="../img/ajudas-horda-corte.jpg" alt="Horde alert at the top of the screen: “Horde in 0:08” with the EVACUATE badge. Below it, the “Time to head back · leave by 1:35 · exit 150 m away” card." width="850" height="228" loading="lazy"></div></div>
+        <div>
+          <table class="atalhos"><tr><th scope="row">What it is</th><td>The game sends three waves of monsters. The third is the horde: time to leave the sanctum.</td></tr><tr><th scope="row">How it looks</th><td>A card at the top centre: <b>“Wave in 0:27”</b>. For the horde it says <b>“Horde in …”</b> with an <b>“EVACUATE”</b> badge. With the bag, a chest or a menu open, the map hides but the alert stays, even in the small window. <kbd>F1</kbd> hides everything.</td></tr><tr><th scope="row">Switch</th><td><b>“Wave and horde alert”</b>.</td></tr></table>
+          <div class="aviso com-i"><svg class="ic" aria-hidden="true"><use href="#alerta"/></svg><div><b>Approximate time in Normal and Hard</b><p>There the time shows with a “≈” and a dashed border, because it has not been checked in a real match yet.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco" id="route">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#rota"/></svg> Path</p>
+      <h2>Route through the nests</h2>
+      <p class="sub">A line through the nest spots you have not looked at yet.</p>
+      <div class="funcao inverso">
+        <div class="foto"><img src="../img/ajudas-rota-limpo.jpg" alt="The map over the game with a blue line leaving the player and passing the nests numbered 1 to 4. Only the stretch to nest 1 is solid." width="1200" height="607" loading="lazy"></div>
+        <div>
+          <table class="atalhos"><tr><th scope="row">What it is</th><td>A blue line through the nest spots not seen yet. The numbers show the order. The dotted part is the rest of the way.</td></tr><tr><th scope="row">How it looks</th><td>Nests inside key rooms are left out. When the horde is coming, the line turns into the path to the nearest exit, in green.</td></tr><tr><th scope="row">Switch</th><td><b>“Route through egg nests”</b>.</td></tr></table>
+        </div>
+      </div>
+      <h3 id="leave-by" class="mt-5"><svg class="ic" aria-hidden="true"><use href="#relogio"/></svg> Time to head back</h3>
+      <div class="lado">
+        <div>
+          <p>The alert compares the time left on the clock with the time it takes to walk to the nearest exit.</p>
+          <p>It reads <b>“Time to head back · leave by …”</b> and, when time is running out, <b>“Leave now!”</b>.</p>
+          <p>Its switch is <b>“Time to head back” alert</b>, separate from the route switch.</p>
+        </div>
+        <div class="aviso dica mt-0"><b>If you run, the alert comes early</b><p>The estimate assumes a slow walk. If you run through the sanctum, leave a little later than the alert says.</p></div>
+      </div>
+    </section>
+
+    <section class="bloco" id="nest-chance">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#ninho"/></svg> Nests</p>
+      <h2>Nest chance</h2>
+      <p class="sub">In every match the game draws where the nests are. The app shows the chance for each spot.</p>
+      <div class="foto"><img src="../img/ajudas-chance-limpo.jpg" alt="The map over the game at the start of a match: the nest spots have a gold ring and “≈45%” beside them." width="1200" height="483" loading="lazy"></div>
+      <div class="lado mt-3">
+        <div>
+          <table class="atalhos"><tr><th scope="row">What it is</th><td>The chance that a nest exists in each spot, in this match. It is recalculated every time you find a nest or look closely at a spot. It is approximate, hence the “≈”.</td></tr><tr><th scope="row">How it looks</th><td>A ring around the spot: the thicker and brighter, the higher the chance. Above 40% the number shows, like <b>“≈45%”</b>. The <b>“boss N%”</b> tag is the chance that the boss is in that room.</td></tr><tr><th scope="row">Switch</th><td><b>“Nest chance”</b>.</td></tr></table>
+        </div>
+        <div>
+          <h3>Nest colors</h3>
+          <ul class="pontos">
+            <li>Gold: may still hold an egg.</li>
+            <li>Green with ✓: already searched. The app sees the ✓ on the game’s minimap, including your friend’s.</li>
+            <li>Gray: you stayed about 3 seconds close, left the room, and 30 seconds went by with no egg and no ✓. The app infers the spot is empty.</li>
+          </ul>
+          <p class="miudo">Just running past does not change the color. When a single spot is left, the ring turns strong yellow with <b>“only this one left”</b>. That is elimination maths, not certainty.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco" id="key-rooms">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#ninho"/></svg> Nests</p>
+      <h2>Nests in Key Rooms</h2>
+      <p class="sub">Is the key worth spending? The app gives you an idea.</p>
+      <div class="lado cap-esq centro">
+        <div class="captura"><img src="../img/ajudas-chave.jpg" alt="The map in a window with the nest spots in gold rings. Some have a key hanging from them." width="540" height="538" loading="lazy"></div>
+        <div>
+          <table class="atalhos"><tr><th scope="row">What it is</th><td>The chance that the nest exists if you open the door. It helps you decide whether the key is worth spending.</td></tr><tr><th scope="row">How it looks</th><td>A ring with a key hanging from it and the number <b>“≈50% with key”</b> beside it. The value changes with the room.</td></tr><tr><th scope="row">Switch</th><td>It goes with <b>“Nest chance”</b>.</td></tr></table>
+          <div class="aviso dica"><b>This number is counted separately</b><p>The value depends on the room: ≈50%, ≈25%, ≈20% or ≈15%. Finding or not finding a nest in an ordinary room does not change a key room’s number.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco" id="rich-rooms">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#bau"/></svg> Rewards</p>
+      <h2>Rich rooms</h2>
+      <p class="sub">The rooms with the best prize of the match.</p>
+      <div class="funcao inverso">
+        <div class="foto"><img src="../img/ajudas-salas.jpg" alt="A room of the map outlined in orange with the label “rich room”. Inside it, an opened chest with a green ✓." width="1000" height="489" loading="lazy"></div>
+        <div>
+          <table class="atalhos"><tr><th scope="row">What it is</th><td>Every match has 1 rich room in Nightmare and 2 in Chaos. Normal and Hard have none. The app only finds out which one it is when a rare chest in that room is opened, by you or a friend.</td></tr><tr><th scope="row">How it looks</th><td>An orange outline labelled <b>“rich room”</b> on the room, and a counter at the top of the screen, like <b>“Rich rooms: 1 of 2”</b> in Chaos.</td></tr><tr><th scope="row">Switch</th><td><b>“Rich rooms”</b>. It also covers the Prismana counter and glow.</td></tr></table>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco" id="chests">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#bau"/></svg> Rewards</p>
+      <h2>Chest types</h2>
+      <p class="sub">Which chests are on the map and where each type can appear.</p>
+      <div class="funcao">
+        <div class="foto"><img src="../img/ajudas-baus.jpg" alt="The map over the game showing only the spots where the Legendary Sarcophagus can appear. Some have a dashed ring." width="1200" height="778" loading="lazy"></div>
+        <div>
+          <table class="atalhos"><tr><th scope="row">What it is</th><td>The map shows the type of each chest. The game draws which chests exist in each match, so the app shows where each type can be.</td></tr><tr><th scope="row">How it looks</th><td>Chest icons on the map. With a filter on, a dashed ring marks a spot that can also be another type of chest.</td></tr><tr><th scope="row">Switch</th><td>“Map” tab, “Icons and trail”, then <b>“N of M ›”</b> on the chest icon.</td></tr></table>
+          <p class="mt-1"><a href="customize.html#chest-types">Step by step in Customize</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco" id="prismana">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#prismana"/></svg> Rewards</p>
+      <h2>Prismana item</h2>
+      <p class="sub">Which rare chests can still give the item in this match.</p>
+      <div class="funcao inverso">
+        <div class="foto"><img src="../img/ajudas-prismana.jpg" alt="The map over the game with rare chests glowing lilac and some opened chests marked with ✓." width="1200" height="788" loading="lazy"></div>
+        <div>
+          <table class="atalhos"><tr><th scope="row">What it is</th><td>A rare chest with a glow can still give the Prismana in this match. Every time a rare chest is opened, yours or a friend’s, the app removes the glow from the ones that no longer can.</td></tr><tr><th scope="row">How it looks</th><td>A glow on the possible rare chests and a counter, like <b>“Prismana: 12 possible spots (2 with key)”</b>. The number changes every match.</td></tr><tr><th scope="row">Switch</th><td>It goes with <b>“Rich rooms”</b>.</td></tr></table>
+          <ul class="pontos mt-2">
+            <li>An opened chest gets a ✓. Gray is one you opened. Colored with a white ✓ is one a friend opened.</li>
+            <li>A closed chest does not show on the game’s minimap. Walking through the room teaches the app nothing.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="proximo"><a class="botao grande" href="team.html">Next: playing in a party <svg class="ic" aria-hidden="true"><use href="#seta"/></svg></a><a class="botao leve" href="customize.html">Customize the map</a></div>
+
+  </main>
+
+  <footer><div class="wrap">
+    <p>AniiCompanion · free fan project. Aniimo is a trademark of Pawprint Studio / FunPlus; not affiliated with them.</p>
+    <div class="rodape-links"><a class="so-com-download" href="download.html">Download</a><a href="privacy.html">Privacy and security</a><a class="so-com-download" href="https://github.com/companiion/aniicompanion-releases/releases">All versions (GitHub)</a></div>
+  </div></footer>
+</body>
+</html>

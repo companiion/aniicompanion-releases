@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en" class="sem-download">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Customize the map — AniiCompanion</title>
+  <meta name="description" content="How to change how the map moves, full screen or window, opacity, icons, trail, chest types, theme and automatic difficulty.">
+  <link rel="stylesheet" href="../style.css">
+  <!-- prévia do link e ícone -->
+  <link rel="icon" href="../img/icon.svg" type="image/svg+xml"><link rel="icon" href="../img/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"><meta name="theme-color" content="#0f1a2e">
+  <link rel="canonical" href="https://companiion.github.io/aniicompanion-releases/en/customize.html">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="AniiCompanion">
+  <meta property="og:title" content="Customize the map — AniiCompanion">
+  <meta property="og:description" content="How to change how the map moves, full screen or window, opacity, icons, trail, chest types, theme and automatic difficulty.">
+  <meta property="og:url" content="https://companiion.github.io/aniicompanion-releases/en/customize.html"><meta property="og:locale" content="en_US"><meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:image" content="https://companiion.github.io/aniicompanion-releases/img/preview-en.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AniiCompanion: live map for Operation: Egg Heist"><meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" hreflang="pt-BR" href="../personalizar.html"><link rel="alternate" hreflang="en" href="customize.html">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" class="sprite" aria-hidden="true" focusable="false">
+<symbol id="voce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 19 20.3 12 16.6 5 20.3z"/></symbol>
+<symbol id="ninho" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8c2.3 0 3.8 2.9 3.8 5.2 0 1.9-1.5 3.2-3.8 3.2S8.2 9.9 8.2 8c0-2.3 1.5-5.2 3.8-5.2z"/><path d="M3.5 13.2c.9 4.4 4.3 7 8.5 7s7.6-2.6 8.5-7"/><path d="M6.2 16.2c3.4 1.5 8.2 1.5 11.6 0"/></symbol>
+<symbol id="ovo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8c3.3 0 5.6 4.6 5.6 8.6 0 3.4-2.5 6.1-5.6 6.1s-5.6-2.7-5.6-6.1c0-4 2.3-8.6 5.6-8.6z"/><path d="M9.3 11.8c.1 1.8 1 3.1 2.6 3.6"/><path d="M8 21.2h8"/></symbol>
+<symbol id="bau" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5c0-3.3 3.6-5.5 8.5-5.5s8.5 2.2 8.5 5.5z"/><path d="M4.5 10.5V19h15v-8.5"/><path d="M12 13v2.6"/></symbol>
+<symbol id="prismana" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 4h11l4 5.5L12 21 2.5 9.5z"/><path d="M2.5 9.5h19"/><path d="M9.2 4 7.5 9.5 12 21l4.5-11.5L14.8 4"/></symbol>
+<symbol id="relogio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.3 2"/></symbol>
+<symbol id="rota" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="2.2"/><circle cx="18" cy="5" r="2.2"/><path d="M8.2 19h5.3a3.5 3.5 0 0 0 0-7h-3a3.5 3.5 0 0 1 0-7h5.3"/></symbol>
+<symbol id="escada" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5h5v-5h5v-5h5v-5h2.5"/><path d="M3.5 20.5h17"/></symbol>
+<symbol id="janela" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M3 9.2h18"/><path d="M6.6 6.9h.01M9.4 6.9h.01"/></symbol>
+<symbol id="equipe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.2 19.5c0-3.3 2.6-5.4 5.8-5.4s5.8 2.1 5.8 5.4"/><path d="M15.5 5.3a3 3 0 0 1 0 5.6"/><path d="M17.5 14.4c1.9.6 3.3 2.2 3.3 5.1"/></symbol>
+<symbol id="atualizacao" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.6-5.9M20 4v4.5h-4.5"/></symbol>
+<symbol id="escudo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+<symbol id="download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></symbol>
+<symbol id="alerta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 21.5 20h-19z"/><path d="M12 10v4.5"/><path d="M12 17.3h.01"/></symbol>
+<symbol id="pergunta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.4a2.6 2.6 0 1 1 3.7 2.3c-.8.4-1.2 1-1.2 1.9"/><path d="M12 17h.01"/></symbol>
+<symbol id="engrenagem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19.08 10.24 L21.47 10.42 L21.47 13.58 L19.08 13.76 L18.25 15.77 L19.81 17.58 L17.58 19.81 L15.77 18.25 L13.76 19.08 L13.58 21.47 L10.42 21.47 L10.24 19.08 L8.23 18.25 L6.42 19.81 L4.19 17.58 L5.75 15.77 L4.92 13.76 L2.53 13.58 L2.53 10.42 L4.92 10.24 L5.75 8.23 L4.19 6.42 L6.42 4.19 L8.23 5.75 L10.24 4.92 L10.42 2.53 L13.58 2.53 L13.76 4.92 L15.77 5.75 L17.58 4.19 L19.81 6.42 L18.25 8.23Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+</svg>
+  <a class="pular" href="#conteudo">Skip to content</a>
+  <header class="top" id="topo"><div class="wrap">
+    <a class="marca" href="index.html"><img class="logo" src="../img/icon.svg" alt="" width="28" height="28">AniiCompanion</a>
+    <nav class="menu-pc" aria-label="Main menu"><a href="index.html">Home</a><a class="so-com-download" href="download.html">Download</a><a href="first-match.html">First match</a><a href="map.html">The map</a><a href="match-aids.html">Match aids</a><a href="team.html">Party</a><a href="customize.html" aria-current="page">Customize</a><a href="troubleshooting.html">Troubleshooting</a><a href="privacy.html">Privacy</a></nav>
+    <div class="idioma" role="group" aria-label="Language"><a lang="pt-BR" hreflang="pt-BR" href="../personalizar.html">PT</a><a lang="en" hreflang="en" href="customize.html" aria-current="true">EN</a></div>
+    <details class="menu-cel"><summary><span class="hamb" aria-hidden="true"></span>Menu</summary>
+      <nav aria-label="Main menu"><a href="index.html">Home</a><a class="so-com-download" href="download.html">Download</a><a href="first-match.html">First match</a><a href="map.html">The map</a><a href="match-aids.html">Match aids</a><a href="team.html">Party</a><a href="customize.html" aria-current="page">Customize</a><a href="troubleshooting.html">Troubleshooting</a><a href="privacy.html">Privacy</a></nav></details>
+  </div></header>
+
+  <main class="wrap" id="conteudo">
+
+    <section class="cab-pagina"><h1>Customize the map</h1><p class="lead">Everything you can change in the app window, from the size of the map to the theme.</p></section>
+    <nav class="indice" aria-label="On this page"><b>On this page</b><ul><li><a href="#window">Full screen or window</a></li><li><a href="#map-mode">Rotating or fixed</a></li><li><a href="#icons">Icons and trail</a></li><li><a href="#chest-types">Chest types</a></li><li><a href="#opacity">Opacity</a></li><li><a href="#difficulty">Difficulty</a></li><li><a href="#theme">Theme</a></li><li><a href="#language">Language</a></li><li><a href="#restart">Restart the map</a></li><li><a href="#report">Save report</a></li><li><a href="#aids">Aids</a></li></ul></nav>
+
+    <div class="lado fixa">
+      <section class="bloco" id="window">
+        <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#janela"/></svg> “Map” tab</p>
+        <h2>Full screen or small window</h2>
+        <p class="sub">The two-sided switch at the top of the “How the map moves” box.</p>
+        <ul class="pontos">
+          <li><b>“Full screen”</b>: the map covers the game screen. Clicks and keys go straight to the game.</li>
+          <li><b>“Window”</b>: a small map in a corner, showing the whole sanctum. You pick the size and the place.</li>
+        </ul>
+        <h3 class="mt-4">How to move the map window</h3>
+        <ol class="passos">
+          <li><b>Unlock it</b><span>Press <kbd>Ctrl</kbd> + <kbd>F1</kbd> in the game. A bar appears: “Drag to move”.</span><div class="foto"><picture><source srcset="../img/pers-janela-claro.png" media="(prefers-color-scheme: light)"><img src="../img/pers-janela-escuro.png" alt="The map window bar when unlocked: “Drag to move” and the hint Ctrl + F1 locks it." width="530" height="56" loading="lazy"></picture></div></li>
+          <li><b>Move and resize</b><span>Drag the bar to move it. Drag a corner to change the size.</span></li>
+          <li><b>Lock it again</b><span><kbd>Ctrl</kbd> + <kbd>F1</kbd> once more. Clicks go to the game again, and the app remembers where you left the window.</span></li>
+        </ol>
+        <h3 class="mt-4">Shortcuts</h3>
+        <table class="atalhos"><tr><th scope="row"><kbd>F1</kbd></th><td>shows or hides the map</td></tr><tr><th scope="row"><kbd>Ctrl</kbd> + <kbd>F1</kbd></th><td>locks and unlocks the map window</td></tr><tr><th scope="row"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F1</kbd></th><td>restarts the map, <a href="#restart">see below</a></td></tr></table>
+        <p class="miudo">While AniiCompanion is open, these keys belong to it and do not reach the game.</p>
+      </section>
+      <div class="captura"><picture><source srcset="../img/config-mapa-claro.png" media="(prefers-color-scheme: light)"><img src="../img/config-mapa-escuro.png" alt="The “Map” tab of the app: full screen or window, how the map moves, map opacity, icons and trail, match difficulty and the “Save report” button." width="380" height="780" loading="lazy"></picture></div>
+      <section class="bloco depois" id="map-mode">
+        <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#voce"/></svg> “Map” tab</p>
+        <h2>How the map moves</h2>
+        <p class="sub">In the “How the map moves” box, pick one of the two.</p>
+        <ul class="checks">
+          <li><b>“Rotates with you”</b><small>The map turns so that where you look is up. It is the easiest way not to get lost.</small></li>
+          <li><b>“Fixed map”</b><small>North is up. The arrow is what turns to where you look.</small></li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="bloco" id="icons">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#ninho"/></svg> Icons</p>
+      <h2>Icons and trail</h2>
+      <p class="sub">The “Icons and trail” row opens a panel from the bottom.</p>
+      <div class="lado cap centro">
+        <ol class="passos">
+          <li><b>Pick the icons</b><span>Click an icon to show or hide it on the map: “Exits”, “Egg Nests”, “Rare Chest”, “Chests”, “Loot piles”, “Key Rooms” and “Challenges”. <b>“All”</b> turns them all on and <b>“Chests only”</b> leaves just the chests.</span></li>
+          <li><b>Pick the trail</b><span>The yellow trail shows where you walked: <b>“Off”</b>, <b>“Short”</b> (about 8 s), <b>“Medium”</b> (20 s) or <b>“Long”</b> (1 min).</span></li>
+          <li><b>Click “Done”</b><span>The panel closes and the map uses your choice. On the chests, <b>“N of M ›”</b> opens the types, in the next section.</span></li>
+        </ol>
+        <div class="captura"><picture><source srcset="../img/pers-painel-claro.png" media="(prefers-color-scheme: light)"><img src="../img/pers-painel-escuro.png" alt="The “Map icons” panel open: seven icons, “All · Chests only” and the “Path trail” with Off, Short, Medium and Long." width="380" height="395" loading="lazy"></picture></div>
+      </div>
+    </section>
+    <div class="anel" role="separator"></div>
+    <section class="bloco" id="chest-types">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#bau"/></svg> Icons</p>
+      <h2>Chest types</h2>
+      <p class="sub">See only the chests that matter, like the Legendary Sarcophagus.</p>
+      <div class="lado cap-esq centro">
+        <div class="captura"><picture><source srcset="../img/pers-tipos-claro.png" media="(prefers-color-scheme: light)"><img src="../img/pers-tipos-escuro.png" alt="The “Chest types” sheet: groups “Rare Chests” and “Common”, one switch per type and the shortcuts “All · Rare only · Legendary only”." width="380" height="667" loading="lazy"></picture></div>
+        <div>
+          <ol class="passos">
+            <li><b>Open the sheet</b><span>In the icons panel, click <b>“N of M ›”</b> under “Rare Chest” or “Chests”.</span></li>
+            <li><b>Switch types on and off</b><span>Each type has a switch, in two groups: <b>“Rare Chests (star on the game's minimap)”</b> and <b>“Common”</b>.</span></li>
+          </ol>
+          <table class="atalhos"><tr><th scope="row">“All”</th><td>turns on every type</td></tr><tr><th scope="row">“Rare only”</th><td>leaves only the rare ones</td></tr><tr><th scope="row">“Legendary only”</th><td>leaves only the Legendary Sarcophagus</td></tr></table>
+          <div class="aviso dica"><b>It shows where the type can appear</b><p>The game draws which chests exist in each match. A dashed ring marks a spot that can also be another type of chest.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lado">
+      <div>
+        <section class="bloco" id="opacity">
+          <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#janela"/></svg> “Map” tab</p>
+          <h2>Map opacity</h2>
+          <p class="sub">How much of the map you see over the game.</p>
+          <p>Under <b>“Map opacity”</b>, drag the bar from <b>“subtle”</b> to <b>“very visible”</b>, from 10% to 100%. It starts at 35%.</p>
+          <p>The small picture next to the bar shows right away how the map looks over a game scene.</p>
+        </section>
+        <section class="bloco" id="difficulty">
+          <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#engrenagem"/></svg> “Map” tab</p>
+          <h2>Match difficulty</h2>
+          <p class="sub">There is nothing to set: the app finds out on its own.</p>
+          <p>It reads the coin goal on the game’s panel. If it cannot read it, the sanctum itself tells the difficulty: <b>“Normal”</b>, <b>“Hard”</b>, <b>“Nightmare”</b> or <b>“Chaos”</b>.</p>
+          <p>You see it on the status card of the app window (“All good! Sanctum 20034 · Nightmare”) and on a label on the map.</p>
+        </section>
+        <section class="bloco" id="theme">
+          <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#janela"/></svg> Header</p>
+          <h2>Light or dark theme</h2>
+          <p class="sub">The sun or moon button in the corner of the header.</p>
+          <p>Click it to switch between light and dark. By default the app follows the Windows theme.</p>
+        </section>
+        <section class="bloco" id="language">
+          <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#janela"/></svg> Header</p>
+          <h2>App language</h2>
+          <p class="sub">The globe button, next to the theme.</p>
+          <p>The first time, the app asks <b>“Which language do you want the app in?”</b> and marks your Windows language. Later, click the globe and pick under <b>“App language”</b>: <b>“Português”</b> or <b>“English”</b>.</p>
+          <p>The screens reload in the new language. Your match, the map and your friends stay as they are.</p>
+        </section>
+      </div>
+      <div>
+        <section class="bloco" id="restart">
+          <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#atualizacao"/></svg> Header</p>
+          <h2>Restart the map</h2>
+          <p class="sub">When the map looks cut off or stuck.</p>
+          <div class="aviso ok com-i"><svg class="ic" aria-hidden="true"><use href="#atualizacao"/></svg><div><b>You keep the match</b><p>Press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F1</kbd> in the game, or click <b>“Restart map”</b> in the app header. Nests, eggs and chests of the match stay marked.</p></div></div>
+        </section>
+        <section class="bloco" id="report">
+          <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#alerta"/></svg> Footer</p>
+          <h2>Save report</h2>
+          <p>Something went wrong? Click <b>“Save report”</b> in the footer. A .zip file goes to your Downloads folder.</p>
+          <p>It carries the app’s logs and a few pictures of the game screen. Send it to whoever gave you the app. <a href="troubleshooting.html">See also the common problems.</a></p>
+        </section>
+        <section class="bloco" id="aids">
+          <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#engrenagem"/></svg> “Match aids” tab</p>
+          <h2>Turn the aids on and off</h2>
+          <p>Every match alert has a switch on the “Match aids” tab. They all start on. <a href="match-aids.html#toggle">See how</a>.</p>
+        </section>
+      </div>
+    </div>
+    <div class="proximo"><a class="botao grande" href="troubleshooting.html">Something went wrong? Common problems <svg class="ic" aria-hidden="true"><use href="#seta"/></svg></a></div>
+
+  </main>
+
+  <footer><div class="wrap">
+    <p>AniiCompanion · free fan project. Aniimo is a trademark of Pawprint Studio / FunPlus; not affiliated with them.</p>
+    <div class="rodape-links"><a class="so-com-download" href="download.html">Download</a><a href="privacy.html">Privacy and security</a><a class="so-com-download" href="https://github.com/companiion/aniicompanion-releases/releases">All versions (GitHub)</a></div>
+  </div></footer>
+</body>
+</html>
