@@ -2,8 +2,8 @@
 
 # AniiCompanion
 
-**Um mapa ao vivo das ruínas do Roubo dos Ovos (Aniimo), desenhado por cima do seu jogo.**
-Mostra onde você está, quais ninhos ainda podem ter ovo, os baús, o caminho da saída e os avisos de reforço. O mapa da sua equipe é somado ao seu.
+**Um mapa ao vivo do Santuário Perdido no Roubo dos Ovos do Aniimo, desenhado por cima do seu jogo.**
+Mostra onde você está, quais ninhos ainda podem ter ovo, os baús, o caminho da saída e os avisos de onda. O mapa da sua equipe é somado ao seu.
 
 <p align="center">
   <img src="images/partida.jpg" alt="O mapa do AniiCompanion no canto da tela durante uma partida do Roubo dos Ovos" width="620">
@@ -19,10 +19,10 @@ Gratuito. Para Windows. Se atualiza com um clique. Projeto de fã, sem ligação
 
 ## O que ele faz
 
-- **Você no mapa, ao vivo.** Acha a sua posição no minimapa do jogo e mostra a ruína inteira. O mapa pode girar com a câmera ou ficar com o norte para cima.
+- **Você no mapa, ao vivo.** Acha a sua posição no minimapa do jogo e mostra o santuário inteiro. O mapa pode girar com a câmera ou ficar com o norte para cima.
 - **Ninhos e ovos.** Mostra onde ainda pode haver um ninho, a chance de cada lugar, quais ninhos você já revistou e os ovos largados no chão.
 - **Baús raros e Prismana.** Mostra quais baús ainda podem dar um item Prismana e se atualiza conforme os baús são abertos.
-- **Rota e avisos.** Uma linha guia você pelos ninhos que ainda não olhou. Você recebe a contagem dos três reforços de monstros e da horda, e o aviso de "hora de voltar" com o caminho até a saída mais perto.
+- **Rota e avisos.** Uma linha guia você pelos ninhos que ainda não olhou. Você recebe a contagem das três ondas de monstros e da horda, e o aviso de "hora de voltar" com o caminho até a saída mais perto.
 - **Andar de cima.** Ao subir a escada, as passarelas do andar de cima aparecem no mapa.
 - **Mapa em janela pequena.** Prefere um mapa pequeno num canto? Troque para uma janela que você move e redimensiona.
 - **Jogando com amigos.** Adicione amigos e veja onde eles estão. Ninhos, ovos e baús que eles acham aparecem no seu mapa também.
@@ -42,8 +42,8 @@ Gratuito. Para Windows. Se atualiza com um clique. Projeto de fã, sem ligação
 1. Vá em [última versão](https://github.com/companiion/aniicompanion-releases/releases/latest) e baixe o arquivo `.zip`.
 2. **Extraia a pasta inteira.** Não rode de dentro do zip.
 3. Abra o `AniiCompanion.exe`. (O Windows pode avisar na primeira vez. Veja a próxima seção.)
-4. Na primeira vez, o app baixa os mapas das ruínas. Leva alguns segundos.
-5. Abra o Aniimo em janela ou tela cheia sem bordas e entre no Roubo dos Ovos. O mapa aparece por cima do jogo, só dentro da ruína.
+4. Na primeira vez, o app baixa os mapas dos santuários. Leva alguns segundos.
+5. Abra o Aniimo em janela ou tela cheia sem bordas e entre no Roubo dos Ovos. O mapa aparece por cima do jogo, só dentro do santuário.
 6. A dificuldade é descoberta sozinha pela meta de moedas do painel do jogo. Você também pode escolher na janela do app (Normal, Difícil, Pesadelo ou Caos).
 
 **Atualizar:** o app confere se há versão nova ao abrir e a cada 6 horas. Quando houver, aparece "Nova versão · Atualizar" no alto da janela. Clique e o app faz o resto. Suas configurações, amigos e mapas baixados continuam, e a versão anterior fica numa pasta chamada `AniiCompanion.anterior` ao lado do app.
@@ -82,14 +82,14 @@ O Aniimo tem um sistema anti-cheat. Não falamos pelos desenvolvedores do jogo e
 Não existe conta e não há coleta de dados. O app só fala com a internet para isto:
 
 - **Atualizações:** confere este repositório do GitHub por versões novas e confere a assinatura do autor e o SHA-256 do arquivo antes de instalar qualquer coisa.
-- **Mapas:** no primeiro uso, baixa os mapas das ruínas do [aniidex.com](https://aniidex.com) e os do andar de cima do [HideoutGacha](https://www.hideoutgacha.com).
+- **Mapas:** no primeiro uso, baixa os mapas dos santuários do [aniidex.com](https://aniidex.com) e os do andar de cima do [HideoutGacha](https://www.hideoutgacha.com).
 - **Modo online (só se você usar):** fala só com os amigos que você adicionou, por relays públicos do Nostr. Os relays veem o seu IP e o horário, mas não o conteúdo, que vai cifrado. Com conexão direta, o amigo vê o IP de casa.
 - **Botão "Salvar relatório":** só cria um arquivo `.zip` na pasta Downloads. Nada é enviado. Se algo der errado, você pode mandar esse arquivo para quem te passou o app. Ele leva os registros do app e algumas fotos da janela do jogo, então outras janelas abertas na hora podem aparecer nelas.
 
 ## Perguntas frequentes
 
 **O mapa não aparece.**
-Confira se o Aniimo está em janela ou tela cheia sem bordas. O mapa também só aparece dentro da ruína, e some sozinho quando você abre a bolsa, um baú ou um menu, e volta sozinho.
+Confira se o Aniimo está em janela ou tela cheia sem bordas. O mapa também só aparece dentro do santuário, e some sozinho quando você abre a bolsa, um baú ou um menu, e volta sozinho.
 
 **Quais teclas ele usa?**
 - `F1` mostra ou esconde o mapa.
@@ -107,7 +107,5 @@ Clique em "Salvar relatório" na janela do app e mande o `.zip` da pasta Downloa
 ## Créditos e aviso
 
 O AniiCompanion é um projeto de fã, gratuito. Aniimo é marca da Pawprint Studio / FunPlus. Este projeto não tem ligação com eles.
-
-Mapas e marcadores: [aniidex.com](https://aniidex.com) e [HideoutGacha](https://www.hideoutgacha.com). Obrigado aos dois.
 
 Este repositório guarda só as versões publicadas do app. Cada versão traz `AniiCompanion-<versão>.zip` (o app) e `manifest.json` e `manifest.json.sig`, que o app usa para se atualizar sozinho.

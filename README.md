@@ -2,8 +2,8 @@
 
 # AniiCompanion
 
-**A live map of the Egg Heist ruins (Aniimo), drawn on top of your game.**
-It shows where you are, which nests may still have an egg, the chests, the way out, and reinforcement alerts. Your team's map is merged with yours.
+**A live map of the Lost Sanctum in Aniimo's Egg Heist, drawn on top of your game.**
+It shows where you are, which nests may still have an egg, the chests, the way out, and wave alerts. Your team's map is merged with yours.
 
 <p align="center">
   <img src="images/partida.jpg" alt="The AniiCompanion map in the corner of the screen during an Egg Heist match" width="620">
@@ -19,10 +19,10 @@ Free. For Windows. Updates itself with one click. A fan project, not affiliated 
 
 ## What it does
 
-- **You on the map, live.** It finds your position on the game's minimap and shows the whole ruin. The map can turn with the camera or stay north-up.
+- **You on the map, live.** It finds your position on the game's minimap and shows the whole sanctum. The map can turn with the camera or stay north-up.
 - **Nests and eggs.** It shows where a nest may still be, the chance for each spot, which nests you already searched, and eggs dropped on the floor.
 - **Rare chests and Prismana.** It shows which chests can still give a Prismana item, and updates as chests get opened.
-- **Route and alerts.** A line guides you through the nests you have not checked yet. You get a countdown to the three monster reinforcements and the horde, and a "time to go back" warning with the route to the nearest exit.
+- **Route and alerts.** A line guides you through the nests you have not checked yet. You get a countdown to the three monster waves and the horde, and a "time to go back" warning with the route to the nearest exit.
 - **Upper floor.** When you climb the stairs, the upper walkways show up on the map.
 - **Map in a small window.** Prefer a small map in a corner? Switch to a movable, resizable window.
 - **Playing with friends.** Add friends and see where they are. Nests, eggs and chests they find appear on your map too.
@@ -42,8 +42,8 @@ Free. For Windows. Updates itself with one click. A fan project, not affiliated 
 1. Go to the [latest release](https://github.com/companiion/aniicompanion-releases/releases/latest) and download the `.zip` file.
 2. **Extract the whole folder.** Do not run it from inside the zip.
 3. Open `AniiCompanion.exe`. (Windows may warn you the first time. See the next section.)
-4. The first time, the app downloads the ruin maps. It takes a few seconds.
-5. Open Aniimo in windowed or borderless mode and start Egg Heist. The map appears on top of the game, only inside the ruins.
+4. The first time, the app downloads the sanctum maps. It takes a few seconds.
+5. Open Aniimo in windowed or borderless mode and start Egg Heist. The map appears on top of the game, only inside the sanctum.
 6. The difficulty is detected on its own from the coin goal on the game's panel. You can also choose it in the app window (Normal, Hard, Nightmare or Chaos).
 
 **Updating:** the app checks for new versions when it opens and every 6 hours. When there is one, you will see "New version · Update" at the top of its window. Click it and the app does the rest. Your settings, friends and downloaded maps are kept, and the previous version stays in a folder called `AniiCompanion.anterior` next to the app.
@@ -82,14 +82,14 @@ Aniimo has an anti-cheat system. We cannot speak for the game's developers, and 
 There is no account and no data collection. The app only talks to the internet for these things:
 
 - **Updates:** it checks this GitHub repository for new versions, and checks the author's signature and the file's SHA-256 before installing anything.
-- **Maps:** on first use it downloads the ruin maps from [aniidex.com](https://aniidex.com) and the upper-floor maps from [HideoutGacha](https://www.hideoutgacha.com).
+- **Maps:** on first use it downloads the sanctum maps from [aniidex.com](https://aniidex.com) and the upper-floor maps from [HideoutGacha](https://www.hideoutgacha.com).
 - **Online mode (only if you use it):** it talks only to friends you added, through public Nostr relays. The relays can see your IP address and the time, but not the content, which is encrypted. With a direct connection, your friend can see your home IP address.
 - **"Save report" button:** it only creates a `.zip` file in your Downloads folder. Nothing is sent. If something goes wrong, you can send that file to whoever gave you the app. It has the app logs and a few screenshots of the game window, so other windows open at the time may appear in them.
 
 ## FAQ
 
 **The map does not show up.**
-Check that Aniimo is in windowed or borderless fullscreen mode. The map also appears only inside the ruins, and it hides on its own when you open the bag, a chest or a menu, and comes back by itself.
+Check that Aniimo is in windowed or borderless fullscreen mode. The map also appears only inside the sanctum, and it hides on its own when you open the bag, a chest or a menu, and comes back by itself.
 
 **Which keys does it use?**
 - `F1` shows or hides the map.
@@ -107,7 +107,5 @@ Click "Salvar relatório" ("Save report") in the app window and send the `.zip` 
 ## Credits and disclaimer
 
 AniiCompanion is a free fan project. Aniimo is a trademark of Pawprint Studio / FunPlus. This project has no connection with them.
-
-Maps and markers: [aniidex.com](https://aniidex.com) and [HideoutGacha](https://www.hideoutgacha.com). Thank you to both.
 
 This repository only holds the published versions of the app. Each version comes with `AniiCompanion-<version>.zip` (the app) and `manifest.json` plus `manifest.json.sig`, which the app uses to update itself.
