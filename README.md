@@ -68,7 +68,7 @@ The app is free and has **no paid code-signing certificate**. Windows warns abou
 Each release page shows the SHA-256 of the zip. To check yours, open PowerShell in the folder with the file and run:
 
 ```powershell
-Get-FileHash .\AniiCompanion-<version>.zip
+Get-FileHash .\AniiCompanion-<version>-<code>.zip
 ```
 
 Compare the result with the one on the release page. If they are different, do not use the file.
@@ -112,4 +112,4 @@ Click "Save report" in the app window and send the `.zip` from your Downloads fo
 
 AniiCompanion is a free fan project. Aniimo is a trademark of Pawprint Studio / FunPlus. This project has no connection with them.
 
-This repository only holds the published versions of the app. Each version comes with `AniiCompanion-<version>.zip` (the app) and `manifest.json` plus `manifest.json.sig`, which the app uses to update itself.
+This repository only holds the published versions of the app. Each version comes with `AniiCompanion-<version>-<code>.zip` (the app) and `manifest.json` plus `manifest.json.sig`, which the app uses to update itself.

@@ -68,7 +68,7 @@ O app é gratuito e **não tem certificado pago de assinatura de código**. O Wi
 A página de cada versão mostra o SHA-256 do zip. Para conferir o seu, abra o PowerShell na pasta do arquivo e rode:
 
 ```powershell
-Get-FileHash .\AniiCompanion-<versão>.zip
+Get-FileHash .\AniiCompanion-<versão>-<código>.zip
 ```
 
 Compare o resultado com o da página da versão. Se for diferente, não use o arquivo.
@@ -112,4 +112,4 @@ Clique em "Salvar relatório" na janela do app e mande o `.zip` da pasta Downloa
 
 O AniiCompanion é um projeto de fã, gratuito. Aniimo é marca da Pawprint Studio / FunPlus. Este projeto não tem ligação com eles.
 
-Este repositório guarda só as versões publicadas do app. Cada versão traz `AniiCompanion-<versão>.zip` (o app) e `manifest.json` e `manifest.json.sig`, que o app usa para se atualizar sozinho.
+Este repositório guarda só as versões publicadas do app. Cada versão traz `AniiCompanion-<versão>-<código>.zip` (o app) e `manifest.json` e `manifest.json.sig`, que o app usa para se atualizar sozinho.
