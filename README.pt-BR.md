@@ -13,6 +13,10 @@ Mostra onde você está, quais ninhos ainda podem ter ovo, os baús, o caminho d
   <a href="https://github.com/companiion/aniicompanion-releases/releases/latest"><b>Baixar para Windows (última versão)</b></a>
 </p>
 
+<p align="center">
+  <a href="https://companiion.github.io/aniicompanion-releases/">Site de ajuda</a>
+</p>
+
 Gratuito. Para Windows. Se atualiza com um clique. Projeto de fã, sem ligação com a Pawprint Studio / FunPlus.
 
 ---
@@ -42,9 +46,9 @@ Gratuito. Para Windows. Se atualiza com um clique. Projeto de fã, sem ligação
 1. Vá em [última versão](https://github.com/companiion/aniicompanion-releases/releases/latest) e baixe o arquivo `.zip`.
 2. **Extraia a pasta inteira.** Não rode de dentro do zip.
 3. Abra o `AniiCompanion.exe`. (O Windows pode avisar na primeira vez. Veja a próxima seção.)
-4. Na primeira vez, o app baixa os mapas dos santuários. Leva alguns segundos.
+4. Na primeira vez, o app pergunta o idioma (português ou inglês). Você pode trocar depois no botão de globo. Ele também baixa os mapas dos santuários, o que leva alguns segundos.
 5. Abra o Aniimo em janela ou tela cheia sem bordas e entre no Roubo dos Ovos. O mapa aparece por cima do jogo, só dentro do santuário.
-6. A dificuldade é descoberta sozinha pela meta de moedas do painel do jogo. Você também pode escolher na janela do app (Normal, Difícil, Pesadelo ou Caos).
+6. A dificuldade é detectada automaticamente pela meta de moedas do painel do jogo. Você não precisa configurar nada.
 
 **Atualizar:** o app confere se há versão nova ao abrir e a cada 6 horas. Quando houver, aparece "Nova versão · Atualizar" no alto da janela. Clique e o app faz o resto. Suas configurações, amigos e mapas baixados continuam, e a versão anterior fica numa pasta chamada `AniiCompanion.anterior` ao lado do app.
 
@@ -79,7 +83,7 @@ O Aniimo tem um sistema anti-cheat. Não falamos pelos desenvolvedores do jogo e
 
 ## Privacidade: o que vai pela internet
 
-Não existe conta e não há coleta de dados. O app só fala com a internet para isto:
+Não pede conta. Não coleta nada que identifique você: nome, login, UID ou código de amigo. Se você aceitar, envia só informações de uso das partidas para melhorar o app; por enquanto, nada é enviado. Leia a [política de privacidade](https://companiion.github.io/aniicompanion-releases/privacidade.html). O app só fala com a internet para isto:
 
 - **Atualizações:** confere este repositório do GitHub por versões novas e confere a assinatura do autor e o SHA-256 do arquivo antes de instalar qualquer coisa.
 - **Mapas:** no primeiro uso, baixa os mapas dos santuários do [aniidex.com](https://aniidex.com) e os do andar de cima do [HideoutGacha](https://www.hideoutgacha.com).
@@ -98,8 +102,8 @@ Confira se o Aniimo está em janela ou tela cheia sem bordas. O mapa também só
 
 Enquanto o AniiCompanion está aberto, essas teclas são dele e não chegam ao jogo. Se outro programa já usa o F1 (por exemplo, outro mapa do Aniimo), feche-o antes.
 
-**O app é em português?**
-Sim. A interface do app está só em português por enquanto. Está planejada uma versão em inglês.
+**Em que idiomas o app está?**
+Em português e em inglês. Você escolhe o idioma na primeira vez que abre o app e pode trocar quando quiser no botão de globo.
 
 **Algo deu errado. E agora?**
 Clique em "Salvar relatório" na janela do app e mande o `.zip` da pasta Downloads para quem te passou o app.
