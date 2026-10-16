@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="sem-download">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,10 +83,10 @@
           <li><b>Scroll to “Assets”</b><span>It is the list of files at the end of the version page.</span></li>
           <li><b>Click the .zip</b><span>It is called <code>AniiCompanion-&lt;version&gt;.zip</code>: the green one in the illustration. The number changes with every update.</span></li>
         </ol>
-        <div class="release" role="img" aria-label="Illustration of the file list of a version on GitHub: the file AniiCompanion-0.2.11.zip is highlighted in green with the label Download this. The other four files do not need to be downloaded.">
+        <div class="release" role="img" aria-label="Illustration of the file list of a version on GitHub: the file AniiCompanion-0.2.12.zip is highlighted in green with the label Download this. The other four files do not need to be downloaded.">
           <div class="release-cab" aria-hidden="true">Assets <span>5</span></div>
           <ul aria-hidden="true">
-            <li class="certo"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 1.5h6l3 3v10h-9z"/><path d="M9.5 1.5v3h3"/></svg><span class="nome">AniiCompanion-0.2.11.zip</span><span class="dica">← Download this</span></li>
+            <li class="certo"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 1.5h6l3 3v10h-9z"/><path d="M9.5 1.5v3h3"/></svg><span class="nome">AniiCompanion-0.2.12.zip</span><span class="dica">← Download this</span></li>
             <li class="errado"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 1.5h6l3 3v10h-9z"/><path d="M9.5 1.5v3h3"/></svg><span class="nome">manifest.json</span><span class="dica">the app uses it by itself</span></li>
             <li class="errado"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 1.5h6l3 3v10h-9z"/><path d="M9.5 1.5v3h3"/></svg><span class="nome">manifest.json.sig</span><span class="dica">the app uses it by itself</span></li>
             <li class="errado"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 1.5h6l3 3v10h-9z"/><path d="M9.5 1.5v3h3"/></svg><span class="nome">Source code (zip)</span><span class="dica">not the program</span></li>
@@ -103,14 +103,16 @@
         <ol class="passos">
           <li><b>Extract the whole folder</b><span>Right-click the zip and choose “Extract all”. Do not run it from inside the zip.</span></li>
           <li><b>Open AniiCompanion.exe</b><span>The first time, Windows may warn you. That is normal: see the next section.</span></li>
+          <li><b>Choose the language</b><span>The first time, the app asks “Which language do you want the app in?”: tap “Português” or “English”. You can change it later with the globe button.</span></li>
           <li><b>Wait for the maps</b><span>The first time, the app downloads the sanctum maps. It takes a few seconds.</span></li>
           <li><b>Open Aniimo and enter Egg Heist</b><span>The map appears on top of the game, only inside the sanctum.</span></li>
           <li><b>The difficulty sets itself</b><span>The app reads it from the coin goal on the game panel (Normal, Hard, Nightmare or Chaos). If it cannot, the sanctum itself tells it. There is nothing to choose.</span></li>
         </ol>
-        <div class="captura"><picture><source srcset="../img/config-mapa-claro.png" media="(prefers-color-scheme: light)"><img src="../img/config-mapa-escuro.png" alt="The AniiCompanion window, Map tab, with six numbered points explained beside it" width="380" height="780" loading="lazy"></picture><span class="marca-n m-71-5_6">1</span><span class="marca-n m-9-10_6">2</span><span class="marca-n m-41-10_6">3</span><span class="marca-n m-69-10_6">4</span><span class="marca-n m-93-22">5</span><span class="marca-n m-93_0-89_8">6</span></div>
+        <div class="captura"><picture><source srcset="../img/v12-config-mapa-en-claro.png" media="(prefers-color-scheme: light)"><img src="../img/v12-config-mapa-en-escuro.png" alt="The AniiCompanion window, Map tab, with seven numbered points explained beside it" width="380" height="650" loading="lazy"></picture><span class="marca-n m-70_5-5_8">1</span><span class="marca-n m-81_1-5_8">2</span><span class="marca-n m-9_1-13_5">3</span><span class="marca-n m-36_5-13_5">4</span><span class="marca-n m-64_8-13_5">5</span><span class="marca-n m-94_3-21_8">6</span><span class="marca-n m-94-83_8">7</span></div>
         <h3 class="depois">This is the app window</h3>
         <ol class="legenda-n grande depois">
-          <li><b>Restart map.</b> If the map looks odd in the game, one click redoes it. The icon next to it switches the light/dark theme.</li>
+          <li><b>Restart map.</b> If the map looks odd in the game, one click redoes it.</li>
+          <li><b>Language.</b> The globe switches the app language (Português or English). The icon next to it switches the light/dark theme.</li>
           <li><b>Map tab.</b> How the map moves (full screen or window, turning or still), opacity and icons.</li>
           <li><b>Match aids tab.</b> Turns each match alert on or off.</li>
           <li><b>Friends tab.</b> Your name and code, adding friends and forming the party.</li>
@@ -152,7 +154,7 @@
       <h2>Update</h2>
       <p class="sub">The app checks for new versions by itself, when it opens and every 6 hours.</p>
       <ol class="passos linha">
-        <li><b>See the notice</b><span>At the top of the app window you will see <span class="selo-novo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg>New version 0.2.11 · Update</span></span></li>
+        <li><b>See the notice</b><span>At the top of the app window you will see <span class="selo-novo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg>New version 0.2.12 · Update</span></span></li>
         <li><b>Click it</b><span>Read what is new and tap “Update now”. The app does the rest.</span></li>
         <li><b>Done</b><span>It downloads, checks the author signature, and only then swaps the app.</span></li>
       </ol>

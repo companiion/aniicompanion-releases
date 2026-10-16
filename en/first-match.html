@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="sem-download">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,12 +60,15 @@
     <section class="bloco" id="before">
       <p class="rotulo">Before you play</p>
       <h2>What to check before opening the game</h2>
-      <ul class="checks">
-        <li><b>Aniimo in windowed or borderless fullscreen</b><small>Exclusive fullscreen cannot be captured, so the map does not work in it.</small></li>
-        <li><b>AniiCompanion open</b><small>You can open it before the game. The app window shows “Waiting for Aniimo to open…”.</small></li>
-        <li><b>Language, first run only</b><small>The app window opens asking “Which language do you want the app in?”. Click “Português” or “English”. To change it later, use the globe button at the top of the window.</small></li>
-        <li><b>Internet, first run only</b><small>The app downloads the sanctum maps (“Preparing the maps…”) in a few seconds.</small></li>
-      </ul>
+      <div class="lado cap-esq estreita centro">
+        <div><div class="captura"><picture><source srcset="../img/v12-config-idioma-en-claro.png" media="(prefers-color-scheme: light)"><img src="../img/v12-config-idioma-en-escuro.png" alt="First window of the app: the question “Which language do you want the app in?” with the Português and English buttons" width="380" height="650" loading="lazy"></picture></div><p class="miudo mt-1">The language choice, first run only.</p></div>
+        <ul class="checks">
+          <li><b>Aniimo in windowed or borderless fullscreen</b><small>Exclusive fullscreen cannot be captured, so the map does not work in it.</small></li>
+          <li><b>AniiCompanion open</b><small>You can open it before the game. The app window shows “Waiting for Aniimo to open…”.</small></li>
+          <li><b>Language, first run only</b><small>The app window opens asking “Which language do you want the app in?”. Click “Português” or “English”. To change it later, use the globe button at the top of the window.</small></li>
+          <li><b>Internet, first run only</b><small>The app downloads the sanctum maps (“Preparing the maps…”) in a few seconds.</small></li>
+        </ul>
+      </div>
     </section>
 
     <section class="bloco" id="enter">
@@ -80,11 +83,10 @@
           <li><b>Wait for the map</b><span>The app window says “All good! Sanctum 20034 · Nightmare” (the number and difficulty change) and the map appears over the game.</span></li>
           <li><b>Play</b><span>Opened the bag, a chest or a menu? The map hides and comes back by itself. That is on purpose.</span></li>
         </ol>
-        <figure class="figura"><div class="figura-img"><img src="../img/partida.jpg" alt="Screenshot of a match with the AniiCompanion map in a small window at the bottom left: the game minimap at the top, the map window with the sanctum, your yellow arrow and the counters" width="774" height="720"><span class="marca-n m-20_5-19_0">1</span><span class="marca-n m-50_0-57_5">2</span><span class="marca-n m-34_5-62_0">3</span><span class="marca-n m-22_0-88_4">4</span></div>
+        <figure class="figura"><div class="figura-img"><img src="../img/v12-mapa-principal-limpo-en.jpg" alt="The AniiCompanion map window with the whole sanctum: your yellow arrow, nests with a gold ring and, at the bottom left, the Prismana and rich rooms counters" width="780" height="760"><span class="marca-n m-44_5-38_5">1</span><span class="marca-n m-74-34">2</span><span class="marca-n m-36-95_8">3</span></div>
           <figcaption><ol class="legenda-n">
-            <li><b>Game minimap.</b> The app finds your position on it.</li>
-            <li><b>AniiCompanion map.</b> The whole sanctum, here in a small window.</li>
             <li><b>You.</b> The yellow arrow.</li>
+            <li><b>Nest.</b> The gold ring shows the chance of a nest there.</li>
             <li><b>Counters.</b> Prismana and rich rooms.</li>
           </ol></figcaption></figure>
       </div>
@@ -95,13 +97,13 @@
       <h2>The app window</h2>
       <div class="lado fixa">
         <p class="sub">The Map, Match aids and Friends tabs sit at its top, and the globe button switches the app language. The numbers below match the screenshot.</p>
-        <div class="captura"><picture><source srcset="../img/config-mapa-claro.png" media="(prefers-color-scheme: light)"><img src="../img/config-mapa-escuro.png" alt="The AniiCompanion window, Map tab, with six markers: Restart map, the “All good!” status, the Full screen or Window switch, how the map moves, the difficulty and Save report" width="380" height="780" loading="lazy"></picture><span class="marca-n m-78_3-5_6">1</span><span class="marca-n m-3_8-20_7">2</span><span class="marca-n m-94_4-29_2">3</span><span class="marca-n m-51_0-33_5">4</span><span class="marca-n m-3_8-78_7">5</span><span class="marca-n m-93_0-89_8">6</span></div>
+        <div class="captura"><picture><source srcset="../img/v12-config-mapa-en-claro.png" media="(prefers-color-scheme: light)"><img src="../img/v12-config-mapa-en-escuro.png" alt="The AniiCompanion window, Map tab, with six markers: Restart map, the language globe, the “All good!” status, the Full screen or Window switch, how the map moves and Save report" width="380" height="650" loading="lazy"></picture><span class="marca-n m-70_5-5_8">1</span><span class="marca-n m-81_1-5_8">2</span><span class="marca-n m-94_3-21_8">3</span><span class="marca-n m-94_3-30_3">4</span><span class="marca-n m-4-26_9">5</span><span class="marca-n m-94-83_8">6</span></div>
         <ol class="legenda-n grande depois">
-          <li><b>Restart map.</b> The circular arrow at the top; the globe next to it switches the app language. Use it if the map looks cut off or frozen. Nests, eggs and chests stay marked.</li>
+          <li><b>Restart map.</b> The circular arrow at the top. Use it if the map looks cut off or frozen. Nests, eggs and chests stay marked.</li>
+          <li><b>Language.</b> The globe switches the app between Português and English.</li>
           <li><b>Status.</b> Tells you if all is well, with the sanctum and difficulty (“All good! Sanctum 20034 · Nightmare”), and reminds you that F1 shows or hides the map.</li>
           <li><b>Full screen | Window.</b> Picks between a map over the whole game and a small map in a corner.</li>
           <li><b>How the map moves.</b> “Rotates with you” or “Fixed map”. <a href="map.html#modes">See the difference →</a></li>
-          <li><b>Difficulty.</b> The window no longer has buttons for it: the app finds out on its own.</li>
           <li><b>Save report.</b> Creates a .zip in your Downloads folder. Send it to whoever gave you the app.</li>
         </ol>
         <h3 class="depois mt-4" id="difficulty">Difficulty</h3>
@@ -119,13 +121,13 @@
     <section class="bloco" id="modes">
       <p class="rotulo">Two sizes</p>
       <h2>Full screen or small window?</h2>
-      <p class="sub">You choose at marker 3 of the app window.</p>
+      <p class="sub">You choose at marker 4 of the app window.</p>
       <div class="funcao">
-        <div class="foto"><img src="../img/pp-tela-toda.jpg" alt="Full screen mode: the map covers the screen, centered on you, with opacity (shown over a plain background)" width="800" height="463" loading="lazy"></div>
+        <div class="foto"><img src="../img/v12-pp-tela-toda-en.jpg" alt="Full screen mode: the map covers the screen, centered on you, with opacity (shown over a plain background)" width="800" height="463" loading="lazy"></div>
         <div><span class="icone"><svg class="ic" aria-hidden="true"><use href="#janela"/></svg></span><h3>Full screen</h3><p>The map sits over the game, centered on you, with the opacity you choose.</p></div>
       </div>
       <div class="funcao inverso">
-        <div class="foto"><img src="../img/mapa-janela.jpg" alt="Window mode: a small map with the whole sanctum over the game scene" width="980" height="618" loading="lazy"></div>
+        <div class="foto"><img src="../img/v12-mapa-parado-en.jpg" alt="Window mode: a small map with the whole sanctum" width="560" height="520" loading="lazy"></div>
         <div><span class="icone"><svg class="ic" aria-hidden="true"><use href="#janela"/></svg></span><h3>Small window</h3><p>The whole sanctum in a corner. Move and resize it with Ctrl+F1.</p><a class="ver" href="customize.html#window">Adjust window and opacity <svg class="ic" aria-hidden="true"><use href="#seta"/></svg></a></div>
       </div>
       <div class="proximo"><a class="botao grande" href="map.html">Next: what each map mark means <svg class="ic" aria-hidden="true"><use href="#seta"/></svg></a></div>

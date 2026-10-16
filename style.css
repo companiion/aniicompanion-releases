@@ -568,6 +568,42 @@ table.tabela-dupla td { color: var(--text); }
 .m-9-10_6 { --x: 9; --y: 10.6; }
 .m-41-10_6 { --x: 41; --y: 10.6; }
 .m-69-10_6 { --x: 69; --y: 10.6; }
+.m-36-95_8 { --x: 36; --y: 95.8; }
+.m-5-27_3 { --x: 5; --y: 27.3; }
+.m-5-29_1 { --x: 5; --y: 29.1; }
+.m-5-34_7 { --x: 5; --y: 34.7; }
+.m-5-36_5 { --x: 5; --y: 36.5; }
+.m-5-43_2 { --x: 5; --y: 43.2; }
+.m-5-43_9 { --x: 5; --y: 43.9; }
+.m-5-51_4 { --x: 5; --y: 51.4; }
+.m-5-51_7 { --x: 5; --y: 51.7; }
+.m-5-59_9 { --x: 5; --y: 59.9; }
+.m-5-60_2 { --x: 5; --y: 60.2; }
+.m-70_5-5_8 { --x: 70.5; --y: 5.8; }
+.m-70_5-6_8 { --x: 70.5; --y: 6.8; }
+.m-81_1-5_8 { --x: 81.1; --y: 5.8; }
+.m-81_1-6_8 { --x: 81.1; --y: 6.8; }
+.m-94-83_8 { --x: 94.0; --y: 83.8; }
+.m-94_1-88 { --x: 94.1; --y: 88.0; }
+.m-94_3-21_8 { --x: 94.3; --y: 21.8; }
+.m-94_3-24_9 { --x: 94.3; --y: 24.9; }
+.m-94_3-30_3 { --x: 94.3; --y: 30.3; }
+.m-94_3-34_7 { --x: 94.3; --y: 34.7; }
+.m-9_1-13_5 { --x: 9.1; --y: 13.5; }
+.m-9_1-15_3 { --x: 9.1; --y: 15.3; }
+.m-64_8-15_3 { --x: 64.8; --y: 15.3; }
+.m-64_8-13_5 { --x: 64.8; --y: 13.5; }
+/* Captura mais estreita ao lado de texto curto (.lado.cap-esq.estreita ou .lado.cap.estreita): coluna de 300 px; a lista .checks vai em 1 coluna. */
+.lado.cap-esq.estreita { grid-template-columns: 300px minmax(0, 1fr); }
+.lado.estreita .checks { grid-template-columns: minmax(0, 1fr); }
+.lado.cap.estreita { grid-template-columns: minmax(0, 1fr) 300px; }
+@media (max-width: 860px) { .lado.cap-esq.estreita, .lado.cap.estreita { grid-template-columns: minmax(0, 1fr); } }
+.m-36_5-15_3 { --x: 36.5; --y: 15.3; }
+.m-36_5-13_5 { --x: 36.5; --y: 13.5; }
+.m-4-31_2 { --x: 4; --y: 31.2; }
+.m-4-26_9 { --x: 4; --y: 26.9; }
+/* Pilha de blocos h3 + texto numa coluna (espaço entre eles). */
+.pilha > div + div { margin-top: 24px; }
 
 /* Chave do download: ver o manual no topo. Sem a classe sem-download no <html>, tudo aparece normal e os avisos "em breve" somem. */
 .sem-download .so-com-download { display: none !important; }

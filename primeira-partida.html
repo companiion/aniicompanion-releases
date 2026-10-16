@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" class="sem-download">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,12 +60,15 @@
     <section class="bloco" id="before">
       <p class="rotulo">Antes de jogar</p>
       <h2>O que conferir antes de abrir o jogo</h2>
-      <ul class="checks">
-        <li><b>Aniimo em janela ou tela cheia sem bordas</b><small>A tela cheia exclusiva não pode ser capturada, e o mapa não funciona nela.</small></li>
-        <li><b>AniiCompanion aberto</b><small>Pode abrir antes do jogo. A janela do app mostra “Esperando o Aniimo abrir…”.</small></li>
-        <li><b>Idioma, só na primeira vez</b><small>A janela do app abre perguntando “Em qual idioma você quer o app?”. Toque em “Português” ou “English”. Para trocar depois, use o botão do globo, no alto da janela.</small></li>
-        <li><b>Internet, só na primeira vez</b><small>O app baixa os mapas dos santuários (“Preparando os mapas…”) em alguns segundos.</small></li>
-      </ul>
+      <div class="lado cap-esq estreita centro">
+        <div><div class="captura"><picture><source srcset="img/v12-config-idioma-pt-claro.png" media="(prefers-color-scheme: light)"><img src="img/v12-config-idioma-pt-escuro.png" alt="Primeira janela do app: a pergunta “Em qual idioma você quer o app?” com os botões Português e English" width="380" height="650" loading="lazy"></picture></div><p class="miudo mt-1">A escolha do idioma, só na primeira vez.</p></div>
+        <ul class="checks">
+          <li><b>Aniimo em janela ou tela cheia sem bordas</b><small>A tela cheia exclusiva não pode ser capturada, e o mapa não funciona nela.</small></li>
+          <li><b>AniiCompanion aberto</b><small>Pode abrir antes do jogo. A janela do app mostra “Esperando o Aniimo abrir…”.</small></li>
+          <li><b>Idioma, só na primeira vez</b><small>A janela do app abre perguntando “Em qual idioma você quer o app?”. Toque em “Português” ou “English”. Para trocar depois, use o botão do globo, no alto da janela.</small></li>
+          <li><b>Internet, só na primeira vez</b><small>O app baixa os mapas dos santuários (“Preparando os mapas…”) em alguns segundos.</small></li>
+        </ul>
+      </div>
     </section>
 
     <section class="bloco" id="enter">
@@ -95,13 +98,13 @@
       <h2>A janela do app</h2>
       <div class="lado fixa">
         <p class="sub">As abas Mapa, Ajudas e Amigos ficam no alto dela, e o botão do globo troca o idioma do app. Os números abaixo são os da captura.</p>
-        <div class="captura"><picture><source srcset="img/config-mapa-claro.png" media="(prefers-color-scheme: light)"><img src="img/config-mapa-escuro.png" alt="A janela do AniiCompanion, aba Mapa, com seis marcadores: Reiniciar mapa, o estado “Tudo certo!”, o seletor Tela toda ou Janela, o jeito de o mapa se mexer, a dificuldade e Salvar relatório" width="380" height="780" loading="lazy"></picture><span class="marca-n m-78_3-5_6">1</span><span class="marca-n m-3_8-20_7">2</span><span class="marca-n m-94_4-29_2">3</span><span class="marca-n m-51_0-33_5">4</span><span class="marca-n m-3_8-78_7">5</span><span class="marca-n m-93_0-89_8">6</span></div>
+        <div class="captura"><picture><source srcset="img/v12-config-mapa-pt-claro.png" media="(prefers-color-scheme: light)"><img src="img/v12-config-mapa-pt-escuro.png" alt="A janela do AniiCompanion, aba Mapa, com seis marcadores: Reiniciar mapa, o globo do idioma, o estado “Tudo certo!”, o seletor Tela toda ou Janela, o jeito de o mapa se mexer e Salvar relatório" width="380" height="650" loading="lazy"></picture><span class="marca-n m-70_5-6_8">1</span><span class="marca-n m-81_1-6_8">2</span><span class="marca-n m-94_3-24_9">3</span><span class="marca-n m-94_3-34_7">4</span><span class="marca-n m-4-31_2">5</span><span class="marca-n m-94_1-88">6</span></div>
         <ol class="legenda-n grande depois">
           <li><b>Reiniciar mapa.</b> A seta circular no alto. Use se o mapa aparecer cortado ou parado. Ninhos, ovos e baús continuam marcados.</li>
+          <li><b>Idioma.</b> O globo troca o idioma do app entre Português e English.</li>
           <li><b>Estado.</b> Diz se está tudo certo, com o santuário e a dificuldade (“Tudo certo! Santuário 20034 · Pesadelo”), e lembra que o F1 mostra ou esconde o mapa.</li>
           <li><b>Tela toda | Janela.</b> Escolhe entre o mapa cobrindo o jogo e um mapa pequeno num canto.</li>
           <li><b>Como o mapa se mexe.</b> “Gira com você” ou “Mapa parado”. <a href="mapa.html#modes">Veja a diferença →</a></li>
-          <li><b>Dificuldade.</b> A janela não tem mais botões para ela: o app descobre sozinho.</li>
           <li><b>Salvar relatório.</b> Gera um .zip na pasta Downloads. Mande para quem te passou o app.</li>
         </ol>
         <h3 class="depois mt-4" id="difficulty">A dificuldade</h3>
@@ -119,9 +122,9 @@
     <section class="bloco" id="modes">
       <p class="rotulo">Dois tamanhos</p>
       <h2>Tela toda ou janela pequena?</h2>
-      <p class="sub">Você escolhe no marcador 3 da janela do app.</p>
+      <p class="sub">Você escolhe no marcador 4 da janela do app.</p>
       <div class="funcao">
-        <div class="foto"><img src="img/pp-tela-toda.jpg" alt="Modo Tela toda: o mapa cobre a tela, centrado em você, com opacidade (mostrado sobre fundo liso)" width="800" height="463" loading="lazy"></div>
+        <div class="foto"><img src="img/v12-pp-tela-toda-pt.jpg" alt="Modo Tela toda: o mapa cobre a tela, centrado em você, com opacidade (mostrado sobre fundo liso)" width="800" height="463" loading="lazy"></div>
         <div><span class="icone"><svg class="ic" aria-hidden="true"><use href="#janela"/></svg></span><h3>Tela toda</h3><p>O mapa fica por cima do jogo, centrado em você, com a opacidade que você escolher.</p></div>
       </div>
       <div class="funcao inverso">

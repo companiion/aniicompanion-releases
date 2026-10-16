@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="sem-download">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,8 +65,7 @@
           <li><b>Go to the “Match aids” tab</b><span>Each aid has its own on/off switch.</span></li>
           <li><b>Click the switch</b><span>Blue means on. The change is instant and only removes the aid from the screen. The rest of the map stays the same.</span></li>
         </ol>
-        <div class="captura"><picture><source srcset="../img/ajudas-aba-claro.png" media="(prefers-color-scheme: light)"><img src="../img/ajudas-aba-escuro.png" alt="The “Match aids” tab of the app with five switches, all on: wave and horde alert, route through egg nests, “time to head back” alert, nest chance and rich rooms." width="380" height="515" loading="lazy"></picture>
-          <span class="marca-n m-5_5-38_8">1</span><span class="marca-n m-5_5-51">2</span><span class="marca-n m-5_5-61_7">3</span><span class="marca-n m-5_5-71_2">4</span><span class="marca-n m-5_5-81_8">5</span></div>
+        <div class="captura"><picture><source srcset="../img/v12-config-ajudas-en-claro.png" media="(prefers-color-scheme: light)"><img src="../img/v12-config-ajudas-en-escuro.png" alt="The “Match aids” tab of the app with five switches, all on: wave and horde alert, route through egg nests, “time to head back” alert, nest chance and rich rooms. Below them, the “Match data” card." width="380" height="650" loading="lazy"></picture><span class="marca-n m-5-27_3">1</span><span class="marca-n m-5-34_7">2</span><span class="marca-n m-5-43_2">3</span><span class="marca-n m-5-51_7">4</span><span class="marca-n m-5-60_2">5</span></div>
         <h3 class="depois">The five aids on the tab</h3>
         <ol class="legenda-n grande depois">
           <li><a href="#reinforcements">Wave and horde alert</a>. Warns 30 s before each monster wave.</li>
@@ -75,6 +74,7 @@
           <li><a href="#nest-chance">Nest chance</a>. Ring and “≈45%” on each egg nest.</li>
           <li><a href="#rich-rooms">Rich rooms</a>. Outline and counter for the rooms with the best prize.</li>
         </ol>
+        <p class="miudo depois">The “Match data” card below is not an aid: it only has the “Send match data” switch. See <a href="privacy.html#data-sharing">Privacy</a>.</p>
       </div>
     </section>
     <div class="anel" role="separator"></div>
@@ -84,7 +84,7 @@
       <h2>Wave and horde alert</h2>
       <p class="sub">A countdown at the top of the screen, 30 seconds before the game releases more monsters.</p>
       <div class="funcao">
-        <div><div class="foto"><img src="../img/ajudas-reforco-corte.jpg" alt="Alert at the top of the screen: “Wave in 0:22”, “2 of 3”, over the map on top of the game." width="860" height="248" loading="lazy"></div><div class="foto"><img src="../img/ajudas-horda-corte.jpg" alt="Horde alert at the top of the screen: “Horde in 0:08” with the EVACUATE badge. Below it, the “Time to head back · leave by 1:35 · exit 150 m away” card." width="850" height="228" loading="lazy"></div></div>
+        <div><div class="foto"><img src="../img/v12-ajudas-reforco-corte-en.jpg" alt="Alert at the top of the screen: “Wave in 0:22”, “2 of 3”, over the map on top of the game." width="860" height="248" loading="lazy"></div><div class="foto"><img src="../img/v12-ajudas-horda-corte-en.jpg" alt="Horde alert at the top of the screen: “Horde in 0:08” with the EVACUATE badge. Below it, the “Time to head back · leave by 1:35 · exit 150 m away” card." width="850" height="228" loading="lazy"></div></div>
         <div>
           <table class="atalhos"><tr><th scope="row">What it is</th><td>The game sends three waves of monsters. The third is the horde: time to leave the sanctum.</td></tr><tr><th scope="row">How it looks</th><td>A card at the top centre: <b>“Wave in 0:27”</b>. For the horde it says <b>“Horde in …”</b> with an <b>“EVACUATE”</b> badge. With the bag, a chest or a menu open, the map hides but the alert stays, even in the small window. <kbd>F1</kbd> hides everything.</td></tr><tr><th scope="row">Switch</th><td><b>“Wave and horde alert”</b>.</td></tr></table>
           <div class="aviso com-i"><svg class="ic" aria-hidden="true"><use href="#alerta"/></svg><div><b>Approximate time in Normal and Hard</b><p>There the time shows with a “≈” and a dashed border, because it has not been checked in a real match yet.</p></div></div>
@@ -139,7 +139,7 @@
       <h2>Nests in Key Rooms</h2>
       <p class="sub">Is the key worth spending? The app gives you an idea.</p>
       <div class="lado cap-esq centro">
-        <div class="captura"><img src="../img/ajudas-chave.jpg" alt="The map in a window with the nest spots in gold rings. Some have a key hanging from them." width="540" height="538" loading="lazy"></div>
+        <div class="captura"><img src="../img/v12-ajudas-chave-en.jpg" alt="The map in a window with the nest spots in gold rings. Some have a key hanging from them." width="540" height="538" loading="lazy"></div>
         <div>
           <table class="atalhos"><tr><th scope="row">What it is</th><td>The chance that the nest exists if you open the door. It helps you decide whether the key is worth spending.</td></tr><tr><th scope="row">How it looks</th><td>A ring with a key hanging from it and the number <b>“≈50% with key”</b> beside it. The value changes with the room.</td></tr><tr><th scope="row">Switch</th><td>It goes with <b>“Nest chance”</b>.</td></tr></table>
           <div class="aviso dica"><b>This number is counted separately</b><p>The value depends on the room: ≈50%, ≈25%, ≈20% or ≈15%. Finding or not finding a nest in an ordinary room does not change a key room’s number.</p></div>
@@ -152,7 +152,7 @@
       <h2>Rich rooms</h2>
       <p class="sub">The rooms with the best prize of the match.</p>
       <div class="funcao inverso">
-        <div class="foto"><img src="../img/ajudas-salas.jpg" alt="A room of the map outlined in orange with the label “rich room”. Inside it, an opened chest with a green ✓." width="1000" height="489" loading="lazy"></div>
+        <div class="foto"><img src="../img/v12-ajudas-salas-en.jpg" alt="A room of the map outlined in orange with the label “rich room”. Inside it, an opened chest with a green ✓." width="1000" height="490" loading="lazy"></div>
         <div>
           <table class="atalhos"><tr><th scope="row">What it is</th><td>Every match has 1 rich room in Nightmare and 2 in Chaos. Normal and Hard have none. The app only finds out which one it is when a rare chest in that room is opened, by you or a friend.</td></tr><tr><th scope="row">How it looks</th><td>An orange outline labelled <b>“rich room”</b> on the room, and a counter at the top of the screen, like <b>“Rich rooms: 1 of 2”</b> in Chaos.</td></tr><tr><th scope="row">Switch</th><td><b>“Rich rooms”</b>. It also covers the Prismana counter and glow.</td></tr></table>
         </div>
@@ -163,8 +163,7 @@
       <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#bau"/></svg> Rewards</p>
       <h2>Chest types</h2>
       <p class="sub">Which chests are on the map and where each type can appear.</p>
-      <div class="funcao">
-        <div class="foto"><img src="../img/ajudas-baus.jpg" alt="The map over the game showing only the spots where the Legendary Sarcophagus can appear. Some have a dashed ring." width="1200" height="778" loading="lazy"></div>
+      <div>
         <div>
           <table class="atalhos"><tr><th scope="row">What it is</th><td>The map shows the type of each chest. The game draws which chests exist in each match, so the app shows where each type can be.</td></tr><tr><th scope="row">How it looks</th><td>Chest icons on the map. With a filter on, a dashed ring marks a spot that can also be another type of chest.</td></tr><tr><th scope="row">Switch</th><td>“Map” tab, “Icons and trail”, then <b>“N of M ›”</b> on the chest icon.</td></tr></table>
           <p class="mt-1"><a href="customize.html#chest-types">Step by step in Customize</a></p>
