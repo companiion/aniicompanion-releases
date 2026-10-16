@@ -60,6 +60,8 @@
    .lado              2 colunas iguais (texto + mídia). .lado.cap = texto + coluna de 380 px (captura). .lado.cap-esq = captura de 380 px + texto.
                       .lado.centro = alinha no meio. antigas: .duas .duas-cols .split .sec2 .par2 (= .lado); .sec2.cap .lado2 .lateral
                       .duas-cols.lado (= .lado.cap); .sec2.q .split.cfg (= .lado.cap-esq); .split.centro (= .lado.centro).
+   .lado.anim         Animação larga (800×508) com a largura cheia da coluna e os passos logo abaixo (a coluna de texto é estreita ao lado da captura do app).
+                      <div class="lado anim"><div class="foto"><picture>…</picture></div><div>passos</div></div>.
    .lado.fixa         Colunas: os filhos diretos ficam à esquerda e a <div class="captura"> (440 px) à direita, acompanhando a rolagem. No celular a
                       captura sobe para depois do 1º filho; marque com class="depois" o que deve vir depois dela (ver Baixar, seção Instalar).
    .funcao            Bloco de função: <div class="funcao"><div class="foto">…</div><div><h3>…</h3><p>…</p></div></div>. Imagem à esquerda;
@@ -609,3 +611,8 @@ table.tabela-dupla td { color: var(--text); }
 .sem-download .so-com-download { display: none !important; }
 .so-sem-download { display: none; }
 .sem-download .so-sem-download { display: block; }
+
+/* Animação larga (.lado.anim): uma coluna, imagem na largura cheia e os passos abaixo. */
+.lado.anim { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+.lado.anim .foto img { display: block; width: 100%; height: auto; }
+.lado.anim .passos { margin: 0; }
