@@ -46,11 +46,11 @@ Gratuito. Para Windows. Se atualiza com um clique. Projeto de fã, sem ligação
 1. Vá em [última versão](https://github.com/companiion/aniicompanion-releases/releases/latest) e baixe o arquivo `.zip`.
 2. **Extraia a pasta inteira.** Não rode de dentro do zip.
 3. Abra o `AniiCompanion.exe`. (O Windows pode avisar na primeira vez. Veja a próxima seção.)
-4. Na primeira vez, o app pergunta o idioma (português ou inglês). Você pode trocar depois no botão de globo. Ele também baixa os mapas dos santuários, o que leva alguns segundos.
+4. Na primeira vez, o app pergunta o idioma (português ou inglês). Você pode trocar depois no botão de globo. Os mapas dos santuários já vêm na pasta (a subpasta `gamedata`), então nada é baixado na primeira vez.
 5. Abra o Aniimo em janela ou tela cheia sem bordas e entre no Roubo dos Ovos. O mapa aparece por cima do jogo, só dentro do santuário.
 6. A dificuldade é detectada automaticamente pela meta de moedas do painel do jogo. Você não precisa configurar nada.
 
-**Atualizar:** o app confere se há versão nova ao abrir e a cada 6 horas. Quando houver, aparece "Nova versão · Atualizar" no alto da janela. Clique e o app faz o resto. Suas configurações, amigos e mapas baixados continuam, e a versão anterior fica numa pasta chamada `AniiCompanion.anterior` ao lado do app.
+**Atualizar:** o app confere se há versão nova ao abrir e a cada 6 horas. Quando houver, aparece "Nova versão · Atualizar" no alto da janela. Clique e o app faz o resto. Suas configurações e amigos continuam, os mapas vêm com a versão nova, e a versão anterior fica numa pasta chamada `AniiCompanion.anterior` ao lado do app.
 
 **Desinstalar:** apague a pasta do app. Suas configurações e registros ficam em `%LOCALAPPDATA%\AniimoCompanion`. Apague essa pasta também se quiser remover tudo.
 
@@ -86,7 +86,7 @@ O Aniimo tem um sistema anti-cheat. Não falamos pelos desenvolvedores do jogo e
 Não pede conta. Não coleta nada que identifique você: nome, login, UID ou código de amigo. Se você aceitar, envia só informações de uso das partidas para melhorar o app; por enquanto, nada é enviado. Leia a [política de privacidade](https://companiion.github.io/aniicompanion-releases/privacidade.html). O app só fala com a internet para isto:
 
 - **Atualizações:** confere este repositório do GitHub por versões novas e confere a assinatura do autor e o SHA-256 do arquivo antes de instalar qualquer coisa.
-- **Mapas:** no primeiro uso, baixa os mapas dos santuários do [aniidex.com](https://aniidex.com) e os do andar de cima do [HideoutGacha](https://www.hideoutgacha.com).
+- **Mapas:** nenhuma conexão. Os mapas já vêm dentro do app (a pasta `gamedata`). O app não baixa mapas e não se conecta a sites de mapa.
 - **Modo online (só se você usar):** fala só com os amigos que você adicionou, por relays públicos do Nostr. Os relays veem o seu IP e o horário, mas não o conteúdo, que vai cifrado. Com conexão direta, o amigo vê o IP de casa.
 - **Botão "Salvar relatório":** só cria um arquivo `.zip` na pasta Downloads. Nada é enviado. Se algo der errado, você pode mandar esse arquivo para quem te passou o app. Ele leva os registros do app e algumas fotos da janela do jogo, então outras janelas abertas na hora podem aparecer nelas.
 

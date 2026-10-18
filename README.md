@@ -46,11 +46,11 @@ Free. For Windows. Updates itself with one click. A fan project, not affiliated 
 1. Go to the [latest release](https://github.com/companiion/aniicompanion-releases/releases/latest) and download the `.zip` file.
 2. **Extract the whole folder.** Do not run it from inside the zip.
 3. Open `AniiCompanion.exe`. (Windows may warn you the first time. See the next section.)
-4. The first time, the app asks for your language (English or Portuguese). You can change it later with the globe button. It also downloads the sanctum maps, which takes a few seconds.
+4. The first time, the app asks for your language (English or Portuguese). You can change it later with the globe button. The sanctum maps already come in the folder (the `gamedata` subfolder), so nothing is downloaded the first time.
 5. Open Aniimo in windowed or borderless mode and start Egg Heist. The map appears on top of the game, only inside the sanctum.
 6. The difficulty is detected automatically from the coin goal on the game's panel. You do not need to set anything.
 
-**Updating:** the app checks for new versions when it opens and every 6 hours. When there is one, you will see "New version · Update" at the top of its window. Click it and the app does the rest. Your settings, friends and downloaded maps are kept, and the previous version stays in a folder called `AniiCompanion.anterior` next to the app.
+**Updating:** the app checks for new versions when it opens and every 6 hours. When there is one, you will see "New version · Update" at the top of its window. Click it and the app does the rest. Your settings and friends are kept, the maps come with the new version, and the previous version stays in a folder called `AniiCompanion.anterior` next to the app.
 
 **Uninstalling:** delete the app folder. Your settings and logs are kept in `%LOCALAPPDATA%\AniimoCompanion`. Delete that folder too if you want to remove everything.
 
@@ -86,7 +86,7 @@ Aniimo has an anti-cheat system. We cannot speak for the game's developers, and 
 No account needed. It collects nothing that identifies you: no name, login, UID or friend code. If you agree, it sends only match usage info to improve the app; for now, nothing is sent. Read the [privacy policy](https://companiion.github.io/aniicompanion-releases/en/privacy.html). The app only talks to the internet for these things:
 
 - **Updates:** it checks this GitHub repository for new versions, and checks the author's signature and the file's SHA-256 before installing anything.
-- **Maps:** on first use it downloads the sanctum maps from [aniidex.com](https://aniidex.com) and the upper-floor maps from [HideoutGacha](https://www.hideoutgacha.com).
+- **Maps:** none. The maps already come inside the app (the `gamedata` folder). The app downloads no maps and does not connect to any map site.
 - **Online mode (only if you use it):** it talks only to friends you added, through public Nostr relays. The relays can see your IP address and the time, but not the content, which is encrypted. With a direct connection, your friend can see your home IP address.
 - **"Save report" button:** it only creates a `.zip` file in your Downloads folder. Nothing is sent. If something goes wrong, you can send that file to whoever gave you the app. It has the app logs and a few screenshots of the game window, so other windows open at the time may appear in them.
 
