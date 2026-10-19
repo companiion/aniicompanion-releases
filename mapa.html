@@ -54,9 +54,9 @@
   <main class="wrap" id="conteudo">
     <section class="cab-pagina"><h1>O mapa</h1><p class="lead">O que cada marca do mapa quer dizer.</p></section>
     <nav class="indice" aria-label="Nesta página"><b>Nesta página</b><ul>
-      <li><a href="#overview">Visão geral</a></li><li><a href="#nests">Ninhos</a></li><li><a href="#eggs">Ovo e rota</a></li><li><a href="#alerts">Avisos</a></li><li><a href="#chests">Baús</a></li><li><a href="#team">Amigos</a></li><li><a href="#upper-floor">Andar de cima</a></li><li><a href="#lost">Procurando você</a></li><li><a href="#modes">Gira ou parado</a></li>
+      <li><a href="#overview">Visão geral</a></li><li><a href="#nests">Ninhos</a></li><li><a href="#eggs">Ovo e rota</a></li><li><a href="#alerts">Avisos</a></li><li><a href="#chests">Baús</a></li><li><a href="#team">Amigos</a></li><li><a href="#upper-floor">Andar de cima</a></li><li><a href="#island">Ilha</a></li><li><a href="#lost">Procurando você</a></li><li><a href="#modes">Gira ou parado</a></li>
     </ul></nav>
-    <p class="nota">O mapa só aparece dentro do santuário. F1 mostra e esconde; Ctrl+Shift+F1 reinicia se ele aparecer estranho.</p>
+    <p class="nota">O mapa aparece dentro do santuário e, se a ilha estiver ligada, também na ilha. F1 mostra e esconde; Ctrl+Shift+F1 reinicia se ele aparecer estranho.</p>
     <p class="nota">Uma etiqueta com a dificuldade (Normal, Difícil, Pesadelo ou Caos) fica embaixo do minimapa do jogo, na tela toda, e no canto de cima à esquerda, na janela.</p>
 
     <section class="bloco" id="overview">
@@ -153,6 +153,21 @@
         <div><div class="foto"><img src="img/v12-mapa-andar-terreo-pt.jpg" alt="O santuário no andar de baixo, antes de subir a escada" width="620" height="600" loading="lazy"></div><p class="miudo">Antes de subir</p></div>
         <div><div class="foto"><img src="img/v12-mapa-andar-cima-pt.jpg" alt="O mesmo santuário depois de subir: as passarelas do andar de cima aparecem mais fortes por cima" width="620" height="600" loading="lazy"></div><p class="miudo">Depois de subir</p></div>
       </div>
+    </section>
+
+    <section class="bloco" id="island">
+      <p class="rotulo">Ilha</p>
+      <h2>A ilha, fora do santuário</h2>
+      <p class="sub">Antes de entrar e depois de sair, o mapa mostra a ilha do modo com você nela.</p>
+      <div class="lado"><figure class="figura"><div class="figura-img"><img src="img/v15-ilha-posicao.jpg" alt="Tela do jogo na ilha: o minimapa no canto e, embaixo, a janela do mapa do AniiCompanion com a seta amarela e o rastro de onde o jogador andou." width="560" height="672" loading="lazy"></div><figcaption>A janela do mapa na ilha, com você e o rastro.</figcaption></figure><figure class="figura"><div class="figura-img"><img src="img/v15-ilha-procurando.jpg" alt="Outro quadro da ilha: a janela do mapa mostra o aviso “Procurando você · mostrando onde você estava” e um ponto cinza no último lugar certo." width="560" height="672" loading="lazy"></div><figcaption>Sem posição: “Procurando você”, com o ponto cinza no último lugar certo.</figcaption></figure></div>
+      <table class="atalhos"><tr><th scope="row">O que faz</th><td>Mostra a ilha no lugar da planta do santuário, com a seta amarela e o rastro de por onde você andou. Ela lê o mesmo minimapa do jogo, sem nada a mais para ligar.</td></tr><tr><th scope="row">Quando some</th><td>Com a bolsa, um baú ou um menu aberto o mapa se esconde, como no santuário. Se o app perde você, aparece <b>“Procurando você”</b> e um ponto cinza fica no último lugar certo. Chuva ou sol forte podem causar isso por alguns segundos; a posição volta sozinha.</td></tr><tr><th scope="row">Desliga</th><td>Aba “Ajudas”, grupo <b>“Ilha”</b>, chave <b>“Ilha ao vivo”</b>. Desligada, o app não lê a ilha e o mapa só aparece dentro do santuário.</td></tr></table>
+      <h3 class="mt-3">O que ela ainda não faz</h3>
+      <ul class="pontos">
+        <li>No mar a posição some, e o app mostra “Procurando você” em vez de chutar um lugar.</li>
+        <li>Os amigos não aparecem na ilha, e a sua posição na ilha não vai para eles.</li>
+        <li>Ninhos, chance de ninho, rota e ovos são coisas do santuário e não aparecem na ilha.</li>
+        <li>Ao abrir a ilha, o mapa leva de 4 a 5 segundos para ficar pronto. Até lá, o app segue só com os santuários.</li>
+      </ul>
     </section>
 
     <section class="bloco" id="lost">

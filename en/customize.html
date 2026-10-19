@@ -53,7 +53,7 @@
   <main class="wrap" id="conteudo">
 
     <section class="cab-pagina"><h1>Customize the map</h1><p class="lead">Everything you can change in the app window, from the size of the map to the theme.</p></section>
-    <nav class="indice" aria-label="On this page"><b>On this page</b><ul><li><a href="#window">Full screen or window</a></li><li><a href="#map-mode">Rotating or fixed</a></li><li><a href="#icons">Icons and trail</a></li><li><a href="#chest-types">Chest types</a></li><li><a href="#opacity">Opacity</a></li><li><a href="#difficulty">Difficulty</a></li><li><a href="#theme">Theme</a></li><li><a href="#language">Language</a></li><li><a href="#restart">Restart the map</a></li><li><a href="#report">Save report</a></li><li><a href="#aids">Aids</a></li></ul></nav>
+    <nav class="indice" aria-label="On this page"><b>On this page</b><ul><li><a href="#window">Full screen or window</a></li><li><a href="#map-mode">Rotating or fixed</a></li><li><a href="#icons">Icons and trail</a></li><li><a href="#chest-types">Chest types</a></li><li><a href="#pile-types">Pile types</a></li><li><a href="#opacity">Opacity</a></li><li><a href="#difficulty">Difficulty</a></li><li><a href="#theme">Theme</a></li><li><a href="#language">Language</a></li><li><a href="#restart">Restart the map</a></li><li><a href="#report">Save report</a></li><li><a href="#aids">Aids</a></li></ul></nav>
 
     <div class="lado fixa">
       <section class="bloco" id="window">
@@ -92,11 +92,11 @@
       <p class="sub">The “Icons and trail” row opens a panel from the bottom.</p>
       <div class="lado cap estreita centro">
         <ol class="passos">
-          <li><b>Pick the icons</b><span>Click an icon to show or hide it on the map: “Exits”, “Egg Nests”, “Rare Chest”, “Chests”, “Loot piles”, “Key Rooms” and “Challenges”. <b>“All”</b> turns them all on and <b>“Chests only”</b> leaves just the chests.</span></li>
+          <li><b>Pick the icons</b><span>Click an icon to show or hide it on the map: “Exits”, “Egg Nests”, “Rare Chest”, “Chests”, “Loot piles”, “Key Rooms”, “Challenges” and “Vendor”. <b>“All”</b> turns them all on and <b>“Chests only”</b> leaves just the chests.</span></li>
           <li><b>Pick the trail</b><span>The yellow trail shows where you walked: <b>“Off”</b>, <b>“Short”</b> (about 8 s), <b>“Medium”</b> (20 s) or <b>“Long”</b> (1 min).</span></li>
-          <li><b>Click “Done”</b><span>The panel closes and the map uses your choice. On the chests, <b>“N of M ›”</b> opens the types, in the next section.</span></li>
+          <li><b>Click “Done”</b><span>The panel closes and the map uses your choice. On the chests and the piles, <b>“N of M ›”</b> opens the types, in the next sections.</span></li>
         </ol>
-        <div class="captura"><picture><source srcset="../img/v12-config-icones-en-claro.png" media="(prefers-color-scheme: light)"><img src="../img/v12-config-icones-en-escuro.png" alt="The “Map icons” panel open: seven icons, “All · Chests only” and the “Path trail” with Off, Short, Medium and Long." width="380" height="650" loading="lazy"></picture></div>
+        <div class="captura"><picture><source srcset="../img/v12-config-icones-en-claro.png" media="(prefers-color-scheme: light)"><img src="../img/v12-config-icones-en-escuro.png" alt="The “Map icons” panel open: eight icons, “All · Chests only” and the “Path trail” with Off, Short, Medium and Long." width="380" height="650" loading="lazy"></picture></div>
       </div>
     </section>
     <div class="anel" role="separator"></div>
@@ -113,6 +113,22 @@
           </ol>
           <table class="atalhos"><tr><th scope="row">“All”</th><td>turns on every type</td></tr><tr><th scope="row">“Rare only”</th><td>leaves only the rare ones</td></tr><tr><th scope="row">“Legendary only”</th><td>leaves only the Legendary Sarcophagus</td></tr></table>
           <div class="aviso dica"><b>It shows where the type can appear</b><p>The game draws which chests exist in each match. A dashed ring marks a spot that can also be another type of chest.</p></div>
+        </div>
+      </div>
+    </section>
+    <div class="anel" role="separator"></div>
+    <section class="bloco" id="pile-types">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#bau"/></svg> Icons</p>
+      <h2>Pile types</h2>
+      <p class="sub">Each pile type has its own icon, and you choose which to see.</p>
+      <div class="lado cap-esq centro">
+        <div class="captura"><picture><source srcset="../img/v15-config-pilhas-en-claro.png" media="(prefers-color-scheme: light)"><img src="../img/v15-config-pilhas-en-escuro.png" alt="The “Pile types” sheet: one switch per pile type, each with its own drawing, and the “All” shortcut." width="380" height="650" loading="lazy"></picture></div>
+        <div>
+          <ol class="passos">
+            <li><b>Open the sheet</b><span>In the icons panel, click <b>“N of M ›”</b> under “Loot piles”.</span></li>
+            <li><b>Switch types on and off</b><span>Each type has a switch. Pots and vats are a single item. <b>“All”</b> turns them all on.</span></li>
+          </ol>
+          <div class="aviso dica"><b>Shows where the type can appear</b><p>The game randomly picks which piles exist in each match. Piles do not change with difficulty.</p></div>
         </div>
       </div>
     </section>
@@ -163,7 +179,7 @@
         <section class="bloco" id="aids">
           <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#engrenagem"/></svg> “Match aids” tab</p>
           <h2>Turn the aids on and off</h2>
-          <p>Every match alert has a switch on the “Match aids” tab. They all start on. <a href="match-aids.html#toggle">See how</a>.</p>
+          <p>Every match aid has a switch on the “Match aids” tab, in four groups: “Drawn on the map”, “Route and alerts”, “Island” and “Data and account”. They all start on. <a href="match-aids.html#toggle">See how</a>.</p>
         </section>
       </div>
     </div>

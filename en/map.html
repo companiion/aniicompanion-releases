@@ -54,9 +54,9 @@
   <main class="wrap" id="conteudo">
     <section class="cab-pagina"><h1>The map</h1><p class="lead">What each mark on the map means.</p></section>
     <nav class="indice" aria-label="On this page"><b>On this page</b><ul>
-      <li><a href="#overview">Overview</a></li><li><a href="#nests">Nests</a></li><li><a href="#eggs">Egg and route</a></li><li><a href="#alerts">Alerts</a></li><li><a href="#chests">Chests</a></li><li><a href="#team">Friends</a></li><li><a href="#upper-floor">Upper floor</a></li><li><a href="#lost">Looking for you</a></li><li><a href="#modes">Rotating or fixed</a></li>
+      <li><a href="#overview">Overview</a></li><li><a href="#nests">Nests</a></li><li><a href="#eggs">Egg and route</a></li><li><a href="#alerts">Alerts</a></li><li><a href="#chests">Chests</a></li><li><a href="#team">Friends</a></li><li><a href="#upper-floor">Upper floor</a></li><li><a href="#island">Island</a></li><li><a href="#lost">Looking for you</a></li><li><a href="#modes">Rotating or fixed</a></li>
     </ul></nav>
-    <p class="nota">The map only shows inside the sanctum. F1 shows and hides it; Ctrl+Shift+F1 restarts it if it looks wrong.</p>
+    <p class="nota">The map shows inside the sanctum and, if the island is on, on the island too. F1 shows and hides it; Ctrl+Shift+F1 restarts it if it looks wrong.</p>
     <p class="nota">A label with the difficulty (Normal, Hard, Nightmare or Chaos) sits under the game minimap in full screen, and at the top left in the window.</p>
 
     <section class="bloco" id="overview">
@@ -153,6 +153,22 @@
         <div><div class="foto"><img src="../img/v12-mapa-andar-terreo-en.jpg" alt="The sanctum on the lower floor, before climbing the stairs" width="620" height="600" loading="lazy"></div><p class="miudo">Before climbing</p></div>
         <div><div class="foto"><img src="../img/v12-mapa-andar-cima-en.jpg" alt="The same sanctum after climbing: the upper-floor walkways show stronger on top" width="620" height="600" loading="lazy"></div><p class="miudo">After climbing</p></div>
       </div>
+    </section>
+
+    <section class="bloco" id="island">
+      <p class="rotulo">Island</p>
+      <h2>The island, outside the sanctum</h2>
+      <p class="sub">Before you enter and after you leave, the map shows the mode’s island with you on it.</p>
+      <div class="lado"><figure class="figura"><div class="figura-img"><img src="../img/v15-ilha-posicao.jpg" alt="Game screen on the island: the minimap in the corner and, below, the AniiCompanion map window with the yellow arrow and the trail of where the player walked." width="560" height="672" loading="lazy"></div><figcaption>The map window on the island, with you and your trail.</figcaption></figure><figure class="figura"><div class="figura-img"><img src="../img/v15-ilha-procurando.jpg" alt="Another island frame: the map window shows the “Looking for you · showing where you were” notice and a grey dot at the last sure spot." width="560" height="672" loading="lazy"></div><figcaption>No position: “Looking for you”, with the grey dot at the last sure spot.</figcaption></figure></div>
+      <table class="atalhos"><tr><th scope="row">What it does</th><td>Shows the island in place of the sanctum plan, with the yellow arrow and the trail of where you walked. It reads the same game minimap, with nothing extra to turn on.</td></tr><tr><th scope="row">When it goes away</th><td>With the bag, a chest or a menu open the map hides, as in the sanctum. If the app loses you, it shows <b>“Looking for you”</b> and a grey dot stays at the last sure spot. Rain or strong sun can cause this for a few seconds; the position comes back on its own.</td></tr><tr><th scope="row">Turn it off</th><td>“Match aids” tab, group <b>“Island”</b>, switch <b>“Live island”</b>. When off, the app does not read the island and the map only shows inside the sanctum.</td></tr></table>
+                    <p class="miudo">The game in these screenshots runs in Portuguese, so the game’s own texts (minimap, objective) are in Portuguese. The app’s notices are shown here as in the Portuguese app.</p>
+      <h3 class="mt-3">What it does not do yet</h3>
+      <ul class="pontos">
+        <li>At sea the position goes away, and the app shows “Looking for you” instead of guessing a spot.</li>
+        <li>Friends do not show on the island, and your island position is not sent to them.</li>
+        <li>Nests, nest chance, the route and eggs belong to the sanctum and do not show on the island.</li>
+        <li>When you open the island, the map takes 4 to 5 seconds to get ready. Until then the app keeps working with the sanctums only.</li>
+      </ul>
     </section>
 
     <section class="bloco" id="lost">

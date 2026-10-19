@@ -53,7 +53,7 @@
   <main class="wrap" id="conteudo">
 
     <section class="cab-pagina"><h1>Personalizar o mapa</h1><p class="lead">Tudo o que você muda na janela do app, do tamanho do mapa ao tema.</p></section>
-    <nav class="indice" aria-label="Nesta página"><b>Nesta página</b><ul><li><a href="#window">Tela toda ou janela</a></li><li><a href="#map-mode">Gira ou parado</a></li><li><a href="#icons">Ícones e rastro</a></li><li><a href="#chest-types">Tipos de baú</a></li><li><a href="#opacity">Opacidade</a></li><li><a href="#difficulty">Dificuldade</a></li><li><a href="#theme">Tema</a></li><li><a href="#language">Idioma</a></li><li><a href="#restart">Reiniciar mapa</a></li><li><a href="#report">Salvar relatório</a></li><li><a href="#aids">Ajudas</a></li></ul></nav>
+    <nav class="indice" aria-label="Nesta página"><b>Nesta página</b><ul><li><a href="#window">Tela toda ou janela</a></li><li><a href="#map-mode">Gira ou parado</a></li><li><a href="#icons">Ícones e rastro</a></li><li><a href="#chest-types">Tipos de baú</a></li><li><a href="#pile-types">Tipos de pilha</a></li><li><a href="#opacity">Opacidade</a></li><li><a href="#difficulty">Dificuldade</a></li><li><a href="#theme">Tema</a></li><li><a href="#language">Idioma</a></li><li><a href="#restart">Reiniciar mapa</a></li><li><a href="#report">Salvar relatório</a></li><li><a href="#aids">Ajudas</a></li></ul></nav>
 
     <div class="lado fixa">
       <section class="bloco" id="window">
@@ -92,11 +92,11 @@
       <p class="sub">A linha “Ícones e rastro” abre um painel por baixo.</p>
       <div class="lado cap estreita centro">
         <ol class="passos">
-          <li><b>Escolha os ícones</b><span>Toque num ícone para mostrar ou esconder no mapa: Saídas, Ninhos de Ovos, Baú Raro, Baús, Pilhas, Salas da Chave e Desafios. <b>“Tudo”</b> liga todos e <b>“Só baús”</b> deixa só os baús.</span></li>
+          <li><b>Escolha os ícones</b><span>Toque num ícone para mostrar ou esconder no mapa: Saídas, Ninhos de Ovos, Baú Raro, Baús, Pilhas, Salas da Chave, Desafios e Comerciante. <b>“Tudo”</b> liga todos e <b>“Só baús”</b> deixa só os baús.</span></li>
           <li><b>Escolha o rastro</b><span>O rastro amarelo mostra por onde você passou: <b>“Desligado”</b>, <b>“Curto”</b> (cerca de 8 s), <b>“Médio”</b> (20 s) ou <b>“Longo”</b> (1 min).</span></li>
-          <li><b>Toque em “Pronto”</b><span>O painel fecha e o mapa usa a sua escolha. Nos baús, o <b>“N de M ›”</b> abre os tipos, na próxima seção.</span></li>
+          <li><b>Toque em “Pronto”</b><span>O painel fecha e o mapa usa a sua escolha. Nos baús e nas pilhas, o <b>“N de M ›”</b> abre os tipos, nas próximas seções.</span></li>
         </ol>
-        <div class="captura"><picture><source srcset="img/v12-config-icones-pt-claro.png" media="(prefers-color-scheme: light)"><img src="img/v12-config-icones-pt-escuro.png" alt="O painel “Ícones no mapa” aberto: sete ícones, “Tudo · Só baús” e o “Rastro do caminho” com Desligado, Curto, Médio e Longo." width="380" height="650" loading="lazy"></picture></div>
+        <div class="captura"><picture><source srcset="img/v12-config-icones-pt-claro.png" media="(prefers-color-scheme: light)"><img src="img/v12-config-icones-pt-escuro.png" alt="O painel “Ícones no mapa” aberto: oito ícones, “Tudo · Só baús” e o “Rastro do caminho” com Desligado, Curto, Médio e Longo." width="380" height="650" loading="lazy"></picture></div>
       </div>
     </section>
     <div class="anel" role="separator"></div>
@@ -113,6 +113,22 @@
           </ol>
           <table class="atalhos"><tr><th scope="row">“Todos”</th><td>liga todos os tipos</td></tr><tr><th scope="row">“Só raros”</th><td>deixa só os raros</td></tr><tr><th scope="row">“Só Lendário”</th><td>deixa só o Sarcófago Lendário</td></tr></table>
           <div class="aviso dica"><b>Mostra onde o tipo pode aparecer</b><p>O jogo sorteia quais baús existem em cada partida. Um anel tracejado marca o lugar que também pode ser outro tipo de baú.</p></div>
+        </div>
+      </div>
+    </section>
+    <div class="anel" role="separator"></div>
+    <section class="bloco" id="pile-types">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#bau"/></svg> Ícones</p>
+      <h2>Tipos de pilha</h2>
+      <p class="sub">Cada tipo de pilha tem um ícone, e você escolhe quais ver.</p>
+      <div class="lado cap-esq centro">
+        <div class="captura"><picture><source srcset="img/v15-config-pilhas-pt-claro.png" media="(prefers-color-scheme: light)"><img src="img/v15-config-pilhas-pt-escuro.png" alt="A folha “Tipos de pilha”: uma chave por tipo de pilha, cada um com o seu desenho, e o atalho “Todos”." width="380" height="650" loading="lazy"></picture></div>
+        <div>
+          <ol class="passos">
+            <li><b>Abra a folha</b><span>No painel de ícones, toque em <b>“N de M ›”</b> embaixo de “Pilhas”.</span></li>
+            <li><b>Ligue e desligue</b><span>Cada tipo tem uma chave. Vasos e ânforas formam um item só. <b>“Todos”</b> liga todos.</span></li>
+          </ol>
+          <div class="aviso dica"><b>Mostra onde o tipo pode aparecer</b><p>O jogo sorteia quais pilhas existem em cada partida. As pilhas não mudam com a dificuldade.</p></div>
         </div>
       </div>
     </section>
@@ -163,7 +179,7 @@
         <section class="bloco" id="aids">
           <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#engrenagem"/></svg> Aba “Ajudas”</p>
           <h2>Ligar e desligar as ajudas</h2>
-          <p>Cada aviso da partida tem uma chave na aba “Ajudas”. Todas vêm ligadas. <a href="ajudas.html#toggle">Veja como</a>.</p>
+          <p>Cada ajuda da partida tem uma chave na aba “Ajudas”, em quatro grupos: “Desenhado no mapa”, “Rota e avisos”, “Ilha” e “Dados e conta”. Todas vêm ligadas. <a href="ajudas.html#toggle">Veja como</a>.</p>
         </section>
       </div>
     </div>

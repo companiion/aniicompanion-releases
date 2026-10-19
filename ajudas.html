@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark light">
   <title>Ajudas da partida — AniiCompanion</title>
-  <meta name="description" content="Avisos de onda e horda, rota, hora de voltar, chance de ninho, salas ricas e Prismana no AniiCompanion, e como ligar e desligar cada um.">
+  <meta name="description" content="Avisos de onda e horda, rota, chance de ninho, desafio por tempo limitado, armadilhas, pilhas, baús possíveis e mais no AniiCompanion, e como ligar e desligar cada um.">
   <link rel="stylesheet" href="style.css">
   <!-- prévia do link e ícone -->
   <link rel="icon" href="img/icon.svg" type="image/svg+xml"><link rel="icon" href="img/favicon.ico" sizes="16x16 32x32 48x48">
@@ -13,7 +13,7 @@
   <link rel="canonical" href="https://companiion.github.io/aniicompanion-releases/ajudas.html">
   <meta property="og:type" content="website"><meta property="og:site_name" content="AniiCompanion">
   <meta property="og:title" content="Ajudas da partida — AniiCompanion">
-  <meta property="og:description" content="Avisos de onda e horda, rota, hora de voltar, chance de ninho, salas ricas e Prismana no AniiCompanion, e como ligar e desligar cada um.">
+  <meta property="og:description" content="Avisos de onda e horda, rota, chance de ninho, desafio por tempo limitado, armadilhas, pilhas, baús possíveis e mais no AniiCompanion, e como ligar e desligar cada um.">
   <meta property="og:url" content="https://companiion.github.io/aniicompanion-releases/ajudas.html"><meta property="og:locale" content="pt_BR"><meta property="og:locale:alternate" content="en_US">
   <meta property="og:image" content="https://companiion.github.io/aniicompanion-releases/img/preview-pt.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="AniiCompanion: mapa ao vivo do Roubo dos Ovos"><meta name="twitter:card" content="summary_large_image">
@@ -53,7 +53,7 @@
   <main class="wrap" id="conteudo">
 
     <section class="cab-pagina"><h1>Ajudas da partida</h1><p class="lead">Avisos e dicas que aparecem sobre o mapa. Cada um liga e desliga sozinho.</p></section>
-    <nav class="indice" aria-label="Nesta página"><b>Nesta página</b><ul><li><a href="#toggle">Ligar e desligar</a></li><li><a href="#reinforcements">Onda e horda</a></li><li><a href="#route">Rota</a></li><li><a href="#leave-by">Hora de voltar</a></li><li><a href="#nest-chance">Chance de ninho</a></li><li><a href="#key-rooms">Sala da Chave</a></li><li><a href="#rich-rooms">Salas ricas</a></li><li><a href="#chests">Tipos de baú</a></li><li><a href="#prismana">Prismana</a></li></ul></nav>
+    <nav class="indice" aria-label="Nesta página"><b>Nesta página</b><ul><li><a href="#toggle">Ligar e desligar</a></li><li><a href="#reinforcements">Onda e horda</a></li><li><a href="#route">Rota</a></li><li><a href="#leave-by">Hora de voltar</a></li><li><a href="#nest-chance">Chance de ninho</a></li><li><a href="#key-rooms">Sala da Chave</a></li><li><a href="#rich-rooms">Salas ricas</a></li><li><a href="#challenge">Desafio por tempo limitado</a></li><li><a href="#traps">Armadilhas</a></li><li><a href="#piles">Pilhas e Comerciante</a></li><li><a href="#possible-chests">Baús possíveis</a></li><li><a href="#floor">Outro andar</a></li><li><a href="#chests">Tipos de baú</a></li><li><a href="#prismana">Prismana</a></li><li><a href="#island">Ilha</a></li></ul></nav>
 
     <section class="bloco" id="toggle">
       <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#engrenagem"/></svg> Antes de tudo</p>
@@ -62,19 +62,18 @@
       <div class="lado fixa">
         <ol class="passos">
           <li><b>Abra a janela do AniiCompanion</b><span>É a janela com as abas no alto. Ela fica aberta ao lado do jogo.</span></li>
-          <li><b>Vá para a aba “Ajudas”</b><span>Cada ajuda tem uma chave de liga e desliga.</span></li>
+          <li><b>Vá para a aba “Ajudas”</b><span>As chaves ficam em quatro grupos. Toque no nome de um grupo para abri-lo; só um fica aberto por vez.</span></li>
           <li><b>Toque na chave</b><span>Azul é ligada. A mudança é na hora e só tira a ajuda da tela. O resto do mapa não muda.</span></li>
         </ol>
-        <div class="captura"><picture><source srcset="img/v12-config-ajudas-pt-claro.png" media="(prefers-color-scheme: light)"><img src="img/v12-config-ajudas-pt-escuro.png" alt="Aba “Ajudas” do app com cinco chaves, todas ligadas: aviso de onda e horda, rota pelos ninhos, aviso “hora de voltar”, chance de ninho e salas ricas. Embaixo, o quadro “Dados das partidas”." width="380" height="650" loading="lazy"></picture><span class="marca-n m-5-29_1">1</span><span class="marca-n m-5-36_5">2</span><span class="marca-n m-5-43_9">3</span><span class="marca-n m-5-51_4">4</span><span class="marca-n m-5-59_9">5</span></div>
-        <h3 class="depois">As cinco ajudas da aba</h3>
-        <ol class="legenda-n grande depois">
-          <li><a href="#reinforcements">Aviso de onda e horda</a>. Avisa 30 s antes de cada onda de monstros.</li>
-          <li><a href="#route">Rota pelos ninhos de ovos</a>. Linha até os ninhos de ovos que faltam olhar.</li>
-          <li><a href="#leave-by">Aviso “hora de voltar”</a>. Quando o tempo até a saída está acabando.</li>
-          <li><a href="#nest-chance">Chance de ninho</a>. Anel e “≈45%” em cada ninho de ovos.</li>
-          <li><a href="#rich-rooms">Salas ricas</a>. Contorno e contador das salas com o melhor prêmio.</li>
-        </ol>
-        <p class="miudo depois">O quadro “Dados das partidas”, embaixo, não é uma ajuda: tem só a chave “Enviar dados das partidas”. Veja em <a href="privacidade.html#data-sharing">Privacidade</a>.</p>
+        <div class="captura"><picture><source srcset="img/v15-config-ajudas-pt-claro.png" media="(prefers-color-scheme: light)"><img src="img/v15-config-ajudas-pt-escuro.png" alt="Aba “Ajudas” do app com o grupo “Desenhado no mapa” aberto, cada ajuda com a sua chave. Embaixo, os grupos “Rota e avisos”, “Ilha” e “Dados e conta”, fechados." width="380" height="650" loading="lazy"></picture></div>
+        <h3 class="depois">Os quatro grupos da aba</h3>
+        <ul class="pontos depois">
+          <li><b>Desenhado no mapa.</b> <a href="#nest-chance">Chance de ninho</a>, <a href="#rich-rooms">Salas ricas</a>, <a href="#traps">Armadilhas possíveis</a>, <a href="#possible-chests">Baús possíveis</a>, <a href="#challenge">Desafio por tempo limitado</a> e <a href="#floor">Só o andar em que você está</a>.</li>
+          <li><b>Rota e avisos.</b> <a href="#route">Rota pelos ninhos de ovos</a>, <a href="#leave-by">Aviso “hora de voltar”</a> e <a href="#reinforcements">Aviso de onda e horda</a>.</li>
+          <li><b>Ilha.</b> <a href="mapa.html#island">Ilha ao vivo</a>.</li>
+          <li><b>Dados e conta.</b> Enviar dados das partidas e apagar seus dados.</li>
+        </ul>
+        <p class="miudo depois">O grupo “Dados e conta” não é uma ajuda do mapa: cuida do envio de dados das partidas. Veja em <a href="privacidade.html#data-sharing">Privacidade</a>. Os ícones, o rastro e os tipos de baú e de pilha ficam na aba “Mapa”.</p>
       </div>
     </section>
     <div class="anel" role="separator"></div>
@@ -159,6 +158,67 @@
       </div>
     </section>
 
+    <section class="bloco" id="challenge">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#relogio"/></svg> Santuário</p>
+      <h2>Desafio por tempo limitado</h2>
+      <p class="sub">Quantos abates dão quantos baús, na hora em que você chega perto.</p>
+      <div class="funcao">
+        <div class="foto"><img src="img/v15-desafio-pt.jpg" alt="Cartão “Desafio por tempo limitado” sobre o mapa: abates 6, 15 e 30 dão 1, 2 e 3 Baús de Relíquias Refinados; 60, 90 e 120 dão 1, 2 e 3 Baús de Ruína Luxuosos." width="1250" height="700" loading="lazy"></div>
+        <div>
+          <table class="atalhos"><tr><th scope="row">O que é</th><td>O Desafio por tempo limitado dá baús conforme os <b>Abates</b>: 6, 15 e 30 abates rendem 1, 2 e 3 Baús de Relíquias Refinados. 60, 90 e 120 rendem 1, 2 e 3 Baús de Ruína Luxuosos.</td></tr><tr><th scope="row">Aparece</th><td>De longe, uma etiqueta pequena como <b>“6–120 abates”</b> junto ao ícone do desafio. Ao chegar perto, ela abre num cartão com a tabela completa.</td></tr><tr><th scope="row">Liga</th><td>Grupo “Desenhado no mapa”, chave <b>“Desafio por tempo limitado”</b>. O ícone do desafio no mapa liga e desliga em “Ícones e rastro”.</td></tr></table>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco" id="traps">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#alerta"/></svg> Santuário</p>
+      <h2>Armadilhas possíveis</h2>
+      <p class="sub">Chamas, espinhos e piso que cai, só onde você está.</p>
+      <div class="funcao inverso">
+        <div class="foto"><img src="img/v15-armadilhas-pt.jpg" alt="Cartão “Armadilhas possíveis” no alto do mapa, com Armadilha de chamas e Espinhos e a frase “O jogo escolhe quais ficam ativas”. No mapa, os lugares aparecem com anel tracejado." width="1200" height="448" loading="lazy"></div>
+        <div>
+          <table class="atalhos"><tr><th scope="row">O que é</th><td>Os lugares onde pode haver <b>Armadilha de chamas</b>, <b>Espinhos</b> ou <b>Piso que cai</b>. O jogo escolhe quais ficam ativas em cada partida, então o app mostra o que é possível, não o que existe.</td></tr><tr><th scope="row">Aparece</th><td>Só num raio curto em volta de você, mais fraco quanto mais longe. Um cartão no alto lista os tipos que estão à vista no andar em que você está. Na janela pequena, o cartão fica no canto de cima, à direita.</td></tr><tr><th scope="row">Liga</th><td>Grupo “Desenhado no mapa”, chave <b>“Armadilhas possíveis”</b>.</td></tr></table>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco" id="piles">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#bau"/></svg> Santuário</p>
+      <h2>Pilhas e Comerciante Misterioso</h2>
+      <p class="sub">Cada tipo de pilha tem o seu ícone, e a loja do Comerciante Misterioso tem nome no mapa.</p>
+      <div class="funcao">
+        <div class="foto"><img src="img/v15-pilhas-pt.jpg" alt="Mapa do santuário com um ícone diferente para cada tipo de pilha e, à direita, o Comerciante Misterioso: um disco dourado com a etiqueta com o nome." width="1250" height="760" loading="lazy"></div>
+        <div>
+          <table class="atalhos"><tr><th scope="row">Pilhas</th><td>Antes todas as pilhas tinham o mesmo desenho. Agora cada tipo tem o seu, e os vasos e ânforas ficam juntos num item só. O jogo sorteia quais pilhas existem, então o ícone marca onde o tipo pode aparecer.</td></tr><tr><th scope="row">Escolher</th><td>Aba “Mapa”, “Ícones e rastro”, e <b>“N de M ›”</b> no ícone Pilhas abre a folha <b>“Tipos de pilha”</b>. Ali você liga e desliga cada tipo. Veja em <a href="personalizar.html#pile-types">Personalizar</a>.</td></tr><tr><th scope="row">Comerciante</th><td>O Comerciante Misterioso aparece como um disco dourado com o nome embaixo. É o 8º ícone do painel “Ícones e rastro”, com o nome <b>“Comerciante”</b>.</td></tr></table>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco" id="possible-chests">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#bau"/></svg> Santuário</p>
+      <h2>Baús possíveis</h2>
+      <p class="sub">Lugares onde o jogo pode pôr um baú, mas não garante.</p>
+      <div class="funcao inverso">
+        <div class="foto"><img src="img/v15-baus-possiveis-pt.jpg" alt="Mapa do santuário em que alguns baús aparecem esmaecidos, com um anel pontilhado fino, e os baús certos aparecem fortes." width="1200" height="800" loading="lazy"></div>
+        <div>
+          <table class="atalhos"><tr><th scope="row">O que é</th><td>O jogo lista mais lugares de baú do que baús que nascem. O que o jogo garante nesta dificuldade aparece normal. O que só está listado aparece esmaecido, com um anel pontilhado.</td></tr><tr><th scope="row">Aparece</th><td>Ícone fraco, menos colorido e com anel pontilhado branco. Quando você abre um baú, o ✓ prova que o lugar tem baú, e ele deixa de ser “possível”.</td></tr><tr><th scope="row">Liga</th><td>Grupo “Desenhado no mapa”, chave <b>“Baús possíveis”</b>.</td></tr></table>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloco" id="floor">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#escada"/></svg> Santuário</p>
+      <h2>Só o andar em que você está</h2>
+      <p class="sub">Os marcadores do outro andar ficam esmaecidos.</p>
+      <div class="funcao">
+        <div class="foto"><img src="img/v15-andar-pt.jpg" alt="Mapa do santuário no andar de cima: os marcadores do andar de baixo aparecem esmaecidos, e ninhos e baús raros do outro andar têm uma setinha para cima ou para baixo." width="1000" height="800" loading="lazy"></div>
+        <div>
+          <table class="atalhos"><tr><th scope="row">O que é</th><td>Em santuários com andar de cima, ninhos, baús e pilhas do andar em que você não está ficam fracos. Assim você vê o que dá para alcançar agora.</td></tr><tr><th scope="row">Aparece</th><td>Marcadores esmaecidos e, nos ninhos e baús raros, uma seta ▲ ou ▼ que diz em que andar eles estão. Santuários sem andar de cima não mudam.</td></tr><tr><th scope="row">Liga</th><td>Grupo “Desenhado no mapa”, chave <b>“Só o andar em que você está”</b>.</td></tr></table>
+          <p class="miudo mt-1">O app leva uns 5 segundos para perceber que você mudou de andar. É normal os marcadores demorarem a trocar na escada.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="bloco" id="chests">
       <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#bau"/></svg> Prêmios</p>
       <h2>Tipos de baú</h2>
@@ -183,9 +243,16 @@
           <ul class="pontos mt-2">
             <li>Baú aberto ganha ✓. Cinza é o que você abriu. Colorido com ✓ branco é o que um amigo abriu.</li>
             <li>Baú fechado não aparece no minimapa do jogo. Passar pela sala não ensina nada ao app.</li>
+            <li>O brilho só aparece em baú que o jogo garante. Baú que só está listado, como os esmaecidos de <a href="#possible-chests">Baús possíveis</a>, não brilha.</li>
           </ul>
         </div>
       </div>
+    </section>
+    <section class="bloco" id="island">
+      <p class="rotulo"><svg class="ic" aria-hidden="true"><use href="#voce"/></svg> Ilha</p>
+      <h2>Ilha ao vivo</h2>
+      <p class="sub">Fora do santuário, o mapa mostra a ilha com você nela. A chave fica no grupo “Ilha”.</p>
+      <p><a href="mapa.html#island">O que ela faz e o que ainda não faz, em O mapa</a></p>
     </section>
     <div class="proximo"><a class="botao grande" href="equipe.html">Próximo: jogar em equipe <svg class="ic" aria-hidden="true"><use href="#seta"/></svg></a><a class="botao leve" href="personalizar.html">Personalizar o mapa</a></div>
 
